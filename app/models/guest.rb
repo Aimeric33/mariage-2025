@@ -10,4 +10,8 @@ class Guest < ApplicationRecord
   def self.ransackable_attributes(auth_object = nil)
     ["address", "brunch_presence", "child", "created_at", "dinner_presence", "email", "first_name", "food_restriction", "id", "id_value", "last_name", "phone", "updated_at"]
   end
+
+  def self.ransackable_associations(auth_object = nil)
+    []
+  end
 end

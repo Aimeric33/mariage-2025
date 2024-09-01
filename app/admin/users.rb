@@ -25,10 +25,6 @@ ActiveAdmin.register User do
     selectable_column
     id_column
     column :email
-    column :encrypted_password
-    column :reset_password_token
-    column :reset_password_sent_at
-    column :remember_created_at
     column :created_at
     column :updated_at
     column :admin
@@ -40,10 +36,6 @@ ActiveAdmin.register User do
     attributes_table_for(resource) do
       row :id
       row :email
-      row :encrypted_password
-      row :reset_password_token
-      row :reset_password_sent_at
-      row :remember_created_at
       row :created_at
       row :updated_at
       row :admin
@@ -55,10 +47,6 @@ ActiveAdmin.register User do
     f.semantic_errors(*f.object.errors.attribute_names)
     f.inputs do
       f.input :email
-      f.input :encrypted_password
-      f.input :reset_password_token
-      f.input :reset_password_sent_at
-      f.input :remember_created_at
       f.input :admin
     end
     f.actions

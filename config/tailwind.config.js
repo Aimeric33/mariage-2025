@@ -8,8 +8,7 @@ module.exports = {
     './app/helpers/**/*.rb',
     './app/javascript/**/*.js',
     './app/views/**/*.{erb,haml,html,slim}',
-    './app/assets/stylesheets/active_admin.css',
-    `${activeAdminPath}/plugin.js`,
+    './app/assets/stylesheets/active_admin.css', s
   ],
   theme: {
     extend: {

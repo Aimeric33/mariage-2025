@@ -14,31 +14,37 @@ ActiveAdmin.register Guest do
   actions :all, except: []
 
   # Add or remove filters to toggle their visibility
-  filter :id
   filter :first_name
   filter :last_name
   filter :address
-  filter :phone
   filter :email
   filter :child
-  filter :dinner_presence
-  filter :brunch_presence
-  filter :food_restriction
+  filter :dinner_presence, as: :select, collection: Guest.dinner_presences.keys
+  filter :brunch_presence, as: :select, collection: Guest.brunch_presences.keys
+  filter :food_restriction, as: :select, collection: Guest.food_restrictions.keys
   filter :created_at
   filter :updated_at
 
   # Add or remove columns to toggle their visibility in the index action
   index do
     selectable_column
-    id_column
+    # id_column
     column :first_name
     column :last_name
     column :address
     column :phone
     column :email
     column :child
-    column :dinner_presence
-    column :brunch_presence
+    column :dinner_presence do |guest|
+      span guest.dinner_presence, class: 'status-tag bg-red-200' if guest.dinner_presence == "dinner_no"
+      span guest.dinner_presence, class: 'status-tag bg-green-200' if guest.dinner_presence == "dinner_yes"
+      span guest.dinner_presence, class: 'status-tag' if guest.dinner_presence == "dinner_invited"
+    end
+    column :brunch_presence do |guest|
+      span guest.brunch_presence, class: 'status-tag bg-red-200' if guest.brunch_presence == "brunch_no"
+      span guest.brunch_presence, class: 'status-tag bg-green-200' if guest.brunch_presence == "brunch_yes"
+      span guest.brunch_presence, class: 'status-tag' if guest.brunch_presence == "brunch_invited"
+    end
     column :food_restriction
     column :created_at
     column :updated_at
@@ -48,15 +54,23 @@ ActiveAdmin.register Guest do
   # Add or remove rows to toggle their visibility in the show action
   show do
     attributes_table_for(resource) do
-      row :id
+      # row :id
       row :first_name
       row :last_name
       row :address
       row :phone
       row :email
       row :child
-      row :dinner_presence
-      row :brunch_presence
+      row :dinner_presence do |guest|
+        span guest.dinner_presence, class: 'status-tag bg-red-200' if guest.dinner_presence == "dinner_no"
+        span guest.dinner_presence, class: 'status-tag bg-green-200' if guest.dinner_presence == "dinner_yes"
+        span guest.dinner_presence, class: 'status-tag' if guest.dinner_presence == "dinner_invited"
+      end
+      row :brunch_presence do |guest|
+        span guest.brunch_presence, class: 'status-tag bg-red-200' if guest.brunch_presence == "brunch_no"
+        span guest.brunch_presence, class: 'status-tag bg-green-200' if guest.brunch_presence == "brunch_yes"
+        span guest.brunch_presence, class: 'status-tag' if guest.brunch_presence == "brunch_invited"
+      end
       row :food_restriction
       row :created_at
       row :updated_at
