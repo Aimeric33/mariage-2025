@@ -50,6 +50,8 @@ gem "bootsnap", require: false
 gem "devise"
 gem "autoprefixer-rails"
 gem "simple_form", github: "heartcombo/simple_form"
+gem "activeadmin", "4.0.0.beta11"
+gem "cssbundling-rails"
 
 group :development, :test do
   gem "dotenv-rails"
