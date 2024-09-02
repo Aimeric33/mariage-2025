@@ -1,5 +1,5 @@
 <% if I18n.locale == I18n.default_locale %>
-  <%= link_to ({ locale: 'en' }), class: 'flex items-center justify-center no-underline text-gray-800 transition-colors duration-300 transform hover:text-orange-500 md:mx-4 md:my-0' do %>
+  <%= link_to ({ locale: 'en' }), class: 'flex items-center justify-center no-underline text-gray-800 transition-colors duration-300 transform hover:text-orange-500' do %>
     <svg height="18" width="18" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
     viewBox="0 0 512 512" xml:space="preserve">
     <circle style="fill:#F0F0F0;" cx="256" cy="256" r="256"/>
@@ -32,7 +32,7 @@
   <span class="ml-2">English</span>
   <% end %>
 <% else %>
-  <%= link_to ({ locale: 'fr' }), class: 'flex items-center justify-center no-underline text-gray-800 transition-colors duration-300 transform hover:text-orange-500 md:mx-4 md:my-0' do %>
+  <%= link_to ({ locale: 'fr' }), class: 'flex items-center justify-center no-underline text-gray-800 transition-colors duration-300 transform hover:text-orange-500' do %>
     <svg height="18" width="18" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 512 512" xml:space="preserve">
       <circle style="fill:#F0F0F0;" cx="256" cy="256" r="256"/>

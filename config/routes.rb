@@ -10,6 +10,9 @@ Rails.application.routes.draw do
   scope "/:locale", locale: /#{I18n.available_locales.join("|")}/ do
     ActiveAdmin.routes(self)
     devise_for :users
-
+    get '/infos-pratiques', to: "pages#infos_pratiques"
+    get '/a-visiter', to: "pages#a_visiter"
+    get '/rsvp', to: "pages#rsvp"
+    get '/mentions-legales', to: "pages#mentions_legales"
   end
 end
