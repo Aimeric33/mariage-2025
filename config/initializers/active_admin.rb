@@ -10,7 +10,7 @@ ActiveAdmin.setup do |config|
   # by extracting the _site_header partial into your project
   # to use your own logo, styles, etc.
   #
-  config.site_title = "Mariage Stéphanie & Aimeric"
+  config.site_title = "Mariage Stéphanie & Aimeric - Base de données"
 
   # == Load Paths
   #
@@ -65,7 +65,7 @@ ActiveAdmin.setup do |config|
   #
   # This setting changes the method which Active Admin calls
   # within the application controller.
-  config.authentication_method = :authenticate_admin!
+  config.authentication_method = :authenticate_user!
 
   # == User Authorization
   #
