@@ -29,25 +29,29 @@ ActiveAdmin.register Guest do
   index do
     selectable_column
     # id_column
-    column :first_name
+    column :first_name do |guest|
+      link_to guest.first_name, admin_guest_path(guest)
+    end
     column :last_name
     column :address
     column :phone
     column :email
     column :child
-    column :dinner_presence do |guest|
-      span guest.dinner_presence, class: 'status-tag bg-red-200' if guest.dinner_presence == "dinner_no"
-      span guest.dinner_presence, class: 'status-tag bg-green-200' if guest.dinner_presence == "dinner_yes"
-      span guest.dinner_presence, class: 'status-tag' if guest.dinner_presence == "dinner_invited"
+    column :dinner_presence, class: 'text-center' do |guest|
+      span Guest.human_attribute_name("dinner_presence.#{guest.dinner_presence}"), class: 'status-tag bg-red-200' if guest.dinner_presence == "dinner_no"
+      span Guest.human_attribute_name("dinner_presence.#{guest.dinner_presence}"), class: 'status-tag bg-green-200' if guest.dinner_presence == "dinner_yes"
+      span Guest.human_attribute_name("dinner_presence.#{guest.dinner_presence}"), class: 'status-tag' if guest.dinner_presence == "dinner_invited"
     end
-    column :brunch_presence do |guest|
-      span guest.brunch_presence, class: 'status-tag bg-red-200' if guest.brunch_presence == "brunch_no"
-      span guest.brunch_presence, class: 'status-tag bg-green-200' if guest.brunch_presence == "brunch_yes"
-      span guest.brunch_presence, class: 'status-tag' if guest.brunch_presence == "brunch_invited"
+    column :brunch_presence, class: 'text-center' do |guest|
+      span Guest.human_attribute_name("brunch_presence.#{guest.brunch_presence}"), class: 'status-tag bg-red-200' if guest.brunch_presence == "brunch_no"
+      span Guest.human_attribute_name("brunch_presence.#{guest.brunch_presence}"), class: 'status-tag bg-green-200' if guest.brunch_presence == "brunch_yes"
+      span Guest.human_attribute_name("brunch_presence.#{guest.brunch_presence}"), class: 'status-tag' if guest.brunch_presence == "brunch_invited"
     end
-    column :food_restriction
-    column :created_at
-    column :updated_at
+    column :food_restriction, class: 'text-center' do |guest|
+      span Guest.human_attribute_name("food_restriction.#{guest.food_restriction}"), class: 'status-tag'
+    end
+    # column :created_at
+    # column :updated_at
     actions
   end
 

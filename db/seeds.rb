@@ -3,6 +3,7 @@ puts "*" * 30
 
 puts "Destroying all records..."
 User.destroy_all
+Guest.destroy_all
 
 puts "*" * 30
 
