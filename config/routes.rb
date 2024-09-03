@@ -15,7 +15,6 @@ Rails.application.routes.draw do
     get '/rsvp', to: "pages#rsvp"
     get '/mentions-legales', to: "pages#mentions_legales"
 
-    resources :guests, only: [:edit]
-    resources :mariages, only: [:update]
+    resources :guests, only: [:edit, :update]
   end
 end

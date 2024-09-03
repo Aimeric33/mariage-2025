@@ -11,8 +11,10 @@ class PagesController < ApplicationController
   end
 
   def rsvp
-    @mariage = Mariage.first
-    @mariage.guests.build
+    respond_to do |format|
+      format.html
+      format.turbo_stream { render turbo_stream: turbo_stream.append("guests", partial: "guests/new_guest") }
+    end
   end
 
   def mentions_legales
