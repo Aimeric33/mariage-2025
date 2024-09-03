@@ -1,1 +1,12 @@
 <h1>Pages#rsvp</h1>
+
+<div class="mt-8">
+  <div>
+    <%= simple_form_for rsvp_path, html: { data: { controller: "search-guest", action: "submit->search-guest#search" } } do |f| %>
+      <%= f.input :search, label: 'Chercher un nom', collection: Guest.all, label_method: :full_name, value_method: :id, input_html: { data: { search_guest_target: "input" }} %>
+      <%= f.submit 'Choisir ce nom' %>
+    <% end %>
+    <%= turbo_frame_tag :edit_form do %>
+    <% end %>
+  </div>
+</div>

@@ -14,5 +14,7 @@ Rails.application.routes.draw do
     get '/a-visiter', to: "pages#a_visiter"
     get '/rsvp', to: "pages#rsvp"
     get '/mentions-legales', to: "pages#mentions_legales"
+
+    resources :guests, only: [:edit, :update]
   end
 end
