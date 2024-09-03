@@ -1,7 +1,7 @@
 <h1>Modifier un invité</h1>
 
 <%= turbo_frame_tag "edit_form_#{@guest.id}" do %>
-  <%= simple_form_for @guest do |guest_form| %>
+  <%= simple_form_for @guest, html: { data: { update_guests_target: "form" }} do |guest_form| %>
     <%= guest_form.input :first_name, label: 'Prénom' %>
     <%= guest_form.input :last_name, label: 'Nom' %>
     <%= guest_form.input :email, label: 'Email' %>

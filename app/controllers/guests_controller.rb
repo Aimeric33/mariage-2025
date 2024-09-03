@@ -8,7 +8,7 @@ class GuestsController < ApplicationController
   def update
     @guest = Guest.find(params[:id])
     @guest.update(guest_params)
-    redirect_to rsvp_path, notice: "Invité modifié!"
+    redirect_to rsvp_path, notice: "RSVP bien reçu(s), merci ❤️ !"
   end
 
   private

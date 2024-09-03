@@ -13,7 +13,7 @@ class PagesController < ApplicationController
   def rsvp
     respond_to do |format|
       format.html
-      format.turbo_stream { render turbo_stream: turbo_stream.append("guests", partial: "guests/new_guest") }
+      format.turbo_stream { render turbo_stream: turbo_stream.append("guests-forms", partial: "guests/new_guest") }
     end
   end
 
