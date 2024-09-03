@@ -1,10 +1,10 @@
 <h1>Modifier un invité</h1>
 
 <%= turbo_frame_tag :edit_form do %>
-  <%= simple_form_for @guest do |f| %>
-    <%= f.input :first_name, label: 'Prénom' %>
-    <%= f.input :last_name, label: 'Nom' %>
-    <%= f.input :email, label: 'Email' %>
-    <%= f.input :phone, label: 'Téléphone' %>
+  <%= simple_fields_for :guests do |guest_form| %>
+    <%= guest_form.input :first_name, label: 'Prénom' %>
+    <%= guest_form.input :last_name, label: 'Nom' %>
+    <%= guest_form.input :email, label: 'Email' %>
+    <%= guest_form.input :phone, label: 'Téléphone' %>
   <% end %>
 <% end %>

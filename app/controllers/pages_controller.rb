@@ -11,6 +11,8 @@ class PagesController < ApplicationController
   end
 
   def rsvp
+    @mariage = Mariage.first
+    @mariage.guests.build
   end
 
   def mentions_legales

@@ -3,7 +3,7 @@ puts "*" * 30
 
 puts "Destroying all records..."
 User.destroy_all
-Guest.destroy_all
+Mariage.destroy_all
 
 puts "*" * 30
 
@@ -16,6 +16,9 @@ puts "Users created!"
 puts "*" * 30
 
 puts "Creating guests..."
+
+Mariage.create!(name: "Mariage Aimeric & Stéphanie")
+
 10.times do |i|
   Guest.create!(
     first_name: "first_name_#{i}",
@@ -26,7 +29,8 @@ puts "Creating guests..."
     child: false,
     dinner_presence: [0, 1, 2].sample,
     brunch_presence: [0, 1, 2].sample,
-    food_restriction: [0, 1, 2].sample
+    food_restriction: [0, 1, 2].sample,
+    mariage: Mariage.first
   )
 end
 puts "Guests created!"

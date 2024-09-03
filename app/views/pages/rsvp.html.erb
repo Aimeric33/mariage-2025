@@ -2,11 +2,20 @@
 
 <div class="mt-8">
   <div>
-    <%= simple_form_for rsvp_path, html: { data: { controller: "search-guest", action: "submit->search-guest#search" } } do |f| %>
-      <%= f.input :search, label: 'Chercher un nom', collection: Guest.all, label_method: :full_name, value_method: :id, input_html: { data: { search_guest_target: "input" }} %>
-      <%= f.submit 'Choisir ce nom' %>
-    <% end %>
-    <%= turbo_frame_tag :edit_form do %>
+    <%= simple_form_for @mariage do |mariage_form| %>
+      <%= simple_form_for rsvp_path, html: { data: { controller: "search-guest" } } do |form_search| %>
+        <%= form_search.input :search, label: 'Chercher un nom', collection: Guest.all, label_method: :full_name, value_method: :id, input_html: { data: { search_guest_target: "input", action: "change->search-guest#search" }} %>
+      <% end %>
+      <div class="mt-4">
+        <%= turbo_frame_tag "edit_form" do %>
+          <%= simple_fields_for :guests do |guest_form| %>
+            <%= guest_form.input :first_name, label: 'Prénom' %>
+            <%= guest_form.input :last_name, label: 'Nom' %>
+            <%= guest_form.input :email, label: 'Email' %>
+            <%= guest_form.input :phone, label: 'Téléphone' %>
+          <% end %>
+        <% end %>
+      </div>
     <% end %>
   </div>
 </div>
