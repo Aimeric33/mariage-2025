@@ -4,8 +4,7 @@
   <%= simple_form_for @guest, html: { data: { update_guests_target: "form" }} do |guest_form| %>
     <%= guest_form.input :first_name, label: 'Prénom' %>
     <%= guest_form.input :last_name, label: 'Nom' %>
-    <%= guest_form.input :email, label: 'Email' %>
-    <%= guest_form.input :phone, label: 'Téléphone' %>
+    <%= guest_form.input :dinner_presence, as: :radio_buttons, collection: [:dinner_yes, :dinner_no] %>
   <% end %>
 
   <%= link_to 'Ajouter un invité', rsvp_path, data: { turbo_stream: true} %>
