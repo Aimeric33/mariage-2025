@@ -14,9 +14,10 @@
   </head>
 
   <body>
-    <%= render "shared/navbar" %>
+    <%# render "shared/navbar" unless controller_name == "pages" && action_name == "home" %>
+    <%= render "shared/navbar_home" %>
     <%= render "shared/flashes" %>
-    <main class="container mx-auto px-4">
+    <main>
       <%= yield %>
     </main>
   </body>

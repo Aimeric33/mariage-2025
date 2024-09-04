@@ -13,8 +13,30 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        sans: ['"Source\\ Sans\\ 3"', ...defaultTheme.fontFamily.sans],
+        handwriting: ['Corinthia', ...defaultTheme.fontFamily.sans],
+        handwriting2: ['Birthstone', ...defaultTheme.fontFamily.sans],
       },
+      colors: {
+        primary: {
+          400: '#de948b',
+          500: '#cf7064',
+          600: '#b85346',
+          700: '#9b453a',
+          800: '#813c33',
+        },
+        secondary: {
+          200: '#bbd4cd',
+          300: '#91b7ae',
+          400: '#78a199',
+          500: '#507c74',
+          600: '#3e635d',
+        },
+        tertiary: {
+          50: '#fff6ef',
+          100: '#ffe8d5',
+        },
+      }
     },
   },
   plugins: [

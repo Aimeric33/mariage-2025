@@ -1,0 +1,45 @@
+<nav class="bg-transparent w-full z-20 absolute top-0 start-0">
+  <div class="container flex flex-wrap items-start justify-between mx-auto p-4">
+    <%= link_to root_path, class: "flex items-center space-x-3 rtl:space-x-reverse" do %>
+      <%= image_tag "logo_blanc.svg", class: "w-12 h-12 md:w-28 md:h-28", alt: "Logo site mariage" %>
+    <% end %>
+    <div class="flex gap-6">
+      <div class="flex md:order-2 gap-6 rtl:space-x-reverse">
+        <%= link_to t('navbar.rsvp'), rsvp_path, class: "no-underline text-white text-lg bg-primary-600 hover:bg-primary-700 focus:outline-none font-bold rounded px-4 py-2 text-center" %>
+        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-gray-800 rounded md:hidden hover:bg-gray-100 focus:outline-none" aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+        </button>
+      </div>
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <ul class="flex flex-col p-4 md:p-0 mt-4 font-bold text-lg border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-transparent">
+          <li>
+            <%= link_to t('navbar.home'), root_path, class: "block py-2 px-3 no-underline text-gray-800 hover:text-primary-600 bg-primary-600 rounded md:bg-transparent md:p-0" %>
+          </li>
+          <li>
+            <%= link_to t('navbar.infos'), infos_pratiques_path, class: "block py-2 px-3 no-underline text-gray-800 hover:text-primary-600 bg-primary-600 rounded md:bg-transparent md:p-0" %>
+          </li>
+          <li>
+            <%= link_to t('navbar.to_visit'), a_visiter_path, class: "block py-2 px-3 no-underline text-gray-800 hover:text-primary-600 bg-primary-600 rounded md:bg-transparent md:p-0" %>
+          </li>
+          <li>
+            <%= render 'shared/locale_switch' %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="w-full bg-right-top bg-cover h-[16rem] md:h-[22rem]" style="background-image: url('<%= image_path('home-banner-background.jpg') %>');">
+    <div class="flex items-center justify-center w-full h-full bg-gray-800/10">
+        <div class="container mx-auto mt-8 text-center flex justify-center md:justify-end">
+            <div class="">
+                <h1 class="text-4xl font-handwriting font-semibold lg:text-7xl">Stéphanie et Aimeric</h1>
+                <p class="w-full px-5 py-2 mt-2 text-2xl font-medium text-white capitalize transition-colors duration-300 transform bg-primary-600 rounded md:w-auto md:mt-4 md:text-4xl">09 . 08 . 2025</p>
+            </div>
+        </div>
+    </div>
+</div>
