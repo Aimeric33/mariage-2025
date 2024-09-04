@@ -10,9 +10,16 @@ export default class extends Controller {
   search(event) {
     event.preventDefault()
     const searchId = this.inputTarget.value
-    console.log(searchId)
     this.editFrameTarget.id = `edit_form_${searchId}`
-    console.log(this.editFrameTarget.id)
+    const locale = document.location.pathname.split('/')[1]
+    if (searchId === "") {
+      Turbo.visit(`/${locale}/rsvp`, { frame: `edit_form` })
+    } else {
+      this.editGuest(searchId)
+    }
+  }
+
+  editGuest(searchId) {
     const locale = document.location.pathname.split('/')[1]
     Turbo.visit(`/${locale}/guests/${searchId}/edit`, { frame: `edit_form_${searchId}` })
   }
