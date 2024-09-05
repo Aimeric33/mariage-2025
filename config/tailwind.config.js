@@ -15,7 +15,7 @@ module.exports = {
       fontFamily: {
         sans: ['"Source\\ Sans\\ 3"', ...defaultTheme.fontFamily.sans],
         handwriting: ['Corinthia', ...defaultTheme.fontFamily.sans],
-        handwriting2: ['Birthstone', ...defaultTheme.fontFamily.sans],
+        handwritingBis: ['Birthstone', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         primary: {
