@@ -1,1 +1,17 @@
 fr:
+  home:
+    ceremony:
+      title: "Cérémonie"
+      description: "Nous sommes très heureux de vous faire-part de notre cérémonie religieuse de mariage et nous comptons sur votre présence."
+    cocktail:
+      title: "Cocktail"
+      description: "Nous vous invitons à partager un moment de convivialité autour d'un vin d'honneur et nous ferons également nos échanges de voeux."
+    dinner:
+      title: "Dîner"
+      description: "Un dîner aux chandelles vous sera proposé en suivant pour régaler vos papilles. Cliquer sur le bouton ci-dessous pour nous confirmer votre présence et vos restrictions alimentaires."
+    brunch:
+      title: "Brunch"
+      description: "Pour ceux qui restent dans le coin le lendemain, nous vous proposons de nous rejoindre pour partager un Petit Déjeuner + Repas copieux (Brunch en anglais).\nNous profiterons de cette occasion pour souffler les 30 bougies de Stéphanie."
+    gift:
+      title: "Cadeau"
+      description: "Votre présence est le plus beau des cadeaux pour nous et pour ça, MERCI ! Seulement s'il vous tient à coeur de nous offrir un cadeau, une cagnotte sera à votre disposition sur place pour nous offrir notre voyage de noces."

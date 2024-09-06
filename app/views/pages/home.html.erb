@@ -1,22 +1,25 @@
 <section class="">
   <div class="container mx-auto px-4 py-12">
     <div class="text-center">
-      <h3 class="text-2xl uppercase font-bold text-gray-800 md:text-3xl">
-        Cérémonie
-      </h3>
+      <%= image_tag "icone-ceremonie.svg", class: "mx-auto mb-4" %>
+      <h2 class="text-2xl uppercase font-bold text-gray-800 md:text-3xl">
+        <%= t("home.ceremony.title") %>
+      </h2>
       <p class="mt-4 mb-8 max-w-2xl mx-auto text-gray-800 text-lg md:text-xl">
-        Nous sommes très heureux de vous faire-part de notre cérémonie religieuse de mariage et nous comptons sur votre présence.
+        <%= t("home.ceremony.description") %>
       </p>
       <div class="mt-4 mx-auto grid grid-cols-[1fr_min-content_1fr] gap-4 items-center md:gap-16">
         <div class="justify-self-end">
           <p class="font-medium text-gray-600 text-xl md:text-3xl">15h00</p>
         </div>
         <div class="inline-block h-100 min-h-[1rem] w-px self-stretch bg-gray-500"></div>
-        <div class="justify-self-start text-left text-gray-600 text-lg md:text-xl">
-          <p>Église Saint Martin</p>
-          <p>24 Grand Rue</p>
-          <p>33570 Montagne</p>
-        </div>
+        <%= link_to "https://maps.app.goo.gl/AiiifXHwdKRMW8ma8", target: "_blank", class: "decoration-gray-600 hover:underline" do %>
+          <div class="justify-self-start text-left text-gray-600 text-lg md:text-xl">
+            <p>Église Saint Martin</p>
+            <p>24 Grand Rue</p>
+            <p>33570 Montagne</p>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>
@@ -25,22 +28,25 @@
 <section class="bg-tertiary-50">
   <div class="container mx-auto px-4 py-12">
     <div class="text-center">
-      <h3 class="text-2xl uppercase font-bold text-gray-800 md:text-3xl">
-        Cocktail
-      </h3>
+      <%= image_tag "icone-cocktail.svg", class: "mx-auto mb-4" %>
+      <h2 class="text-2xl uppercase font-bold text-gray-800 md:text-3xl">
+        <%= t("home.cocktail.title") %>
+      </h2>
       <p class="mt-4 mb-8 max-w-2xl mx-auto text-gray-800 text-lg md:text-xl">
-        Nous sommes très heureux de vous faire-part de notre cérémonie religieuse de mariage et nous comptons sur votre présence.
+        <%= t("home.cocktail.description") %>
       </p>
       <div class="mt-4 mx-auto grid grid-cols-[1fr_min-content_1fr] gap-4 items-center md:gap-16">
         <div class="justify-self-end">
           <p class="font-medium text-gray-600 text-xl md:text-3xl">17h00</p>
         </div>
         <div class="inline-block h-100 min-h-[1rem] w-px self-stretch bg-gray-500"></div>
-        <div class="justify-self-start text-left text-gray-600 text-lg md:text-xl">
-          <p>Château Saint Georges</p>
-          <p>5 route de Saint Émilion</p>
-          <p>33570 Montagne</p>
-        </div>
+        <%= link_to "https://maps.app.goo.gl/zsWwEX8tTtD8crZn6", target: "_blank", class: "decoration-gray-600 hover:underline" do %>
+          <div class="justify-self-start text-left text-gray-600 text-lg md:text-xl">
+            <p>Château Saint Georges</p>
+            <p>5 route de Saint Émilion</p>
+            <p>33570 Montagne</p>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>
@@ -49,63 +55,73 @@
 <section class="">
   <div class="container mx-auto px-4 py-12">
     <div class="text-center">
-      <h3 class="text-2xl uppercase font-bold text-gray-800 md:text-3xl">
-        Dîner
-      </h3>
+      <%= image_tag "icone-diner.svg", class: "mx-auto mb-4" %>
+      <h2 class="text-2xl uppercase font-bold text-gray-800 md:text-3xl">
+        <%= t("home.dinner.title") %>
+      </h2>
       <p class="mt-4 mb-8 max-w-2xl mx-auto text-gray-800 text-lg md:text-xl">
-        Un dîner aux chandelles vous sera proposé en suivant pour régaler vos papilles. Cliquer sur le bouton ci-dessous pour nous confirmer votre présence et votre régime alimentaire.
+        <%= t("home.dinner.description") %>
       </p>
-      <a class="group relative inline-block focus:outline-none focus:ring" href="#">
-        <span
-          class="absolute inset-0 translate-x-1.5 translate-y-1.5 rounded bg-primary-600 transition-transform group-hover:translate-x-0 group-hover:translate-y-0"
-        ></span>
-
-        <span
-          class="relative inline-block rounded border-2 border-primary-800 px-8 py-3 font-bold uppercase tracking-widest text-white group-active:text-opacity-75"
-        >
-          Confirmer ma présence
+      <%= link_to rsvp_path, class: "group relative inline-block focus:outline-none" do %>
+        <span class="absolute inset-0 translate-x-1.5 translate-y-1.5 rounded bg-primary-600 transition-transform group-hover:translate-x-0 group-hover:translate-y-0"></span>
+        <span class="relative inline-block rounded border-2 border-primary-800 px-8 py-3 font-bold uppercase tracking-widest text-white group-active:text-opacity-75">
+          <%= t("rsvp_button") %>
         </span>
-      </a>
-      <%# link_to t('navbar.rsvp'), rsvp_path, class: "no-underline text-white text-lg bg-primary-600 hover:bg-primary-700 focus:outline-none font-bold rounded px-4 py-2 text-center" %>
+      <% end %>
     </div>
   </div>
 </section>
 
 <section class="bg-tertiary-50">
   <div class="container mx-auto px-4 py-12">
-    <div class="text-center">
-      <h3 class="text-2xl uppercase font-bold text-gray-800 md:text-3xl">
-        Brunch
-      </h3>
-      <p class="mt-4 mb-8 max-w-2xl mx-auto text-gray-800 text-lg md:text-xl">
-        Un dîner aux chandelles vous sera proposé en suivant pour régaler vos papilles. Cliquer sur le bouton ci-dessous pour nous confirmer votre présence et votre régime alimentaire.
-      </p>
-      <div class="mt-4 mb-8 mx-auto grid grid-cols-[1fr_min-content_1fr] gap-4 items-center md:gap-16">
-        <div class="justify-self-end">
-          <p class="text-gray-600 text-md md:text-xl">Dim. 10/08/25</p>
-          <p class="font-medium text-gray-600 text-xl md:text-3xl">11h00</p>
+    <div class="gap-8 items-center mx-auto max-w-screen-xl lg:grid lg:grid-cols-2">
+      <div class="text-center">
+        <%= image_tag "icone-brunch.svg", class: "mx-auto mb-4" %>
+        <h2 class="text-2xl uppercase font-bold text-gray-800 md:text-3xl">
+          <%= t("home.brunch.title") %>
+        </h2>
+        <p class="mt-4 mb-8 max-w-2xl mx-auto text-gray-800 text-lg md:text-xl">
+          <%= t("home.brunch.description") %>
+        </p>
+        <div class="mt-4 mb-8 mx-auto grid grid-cols-[1fr_min-content_min-content_min-content_1fr] gap-4 items-center md:gap-8">
+          <div class="justify-self-end">
+            <p class="text-gray-600 text-lg md:text-xl">Dim. 10/08/25</p>
+          </div>
+          <div class="inline-block h-100 min-h-[1rem] w-px self-stretch bg-gray-500"></div>
+          <div class="">
+            <p class="font-medium text-gray-600 text-xl md:text-3xl">11h00</p>
+          </div>
+          <div class="inline-block h-100 min-h-[1rem] w-px self-stretch bg-gray-500"></div>
+          <%= link_to "https://maps.app.goo.gl/zsWwEX8tTtD8crZn6", target: "_blank", class: "decoration-gray-600 hover:underline" do %>
+            <div class="justify-self-start text-left text-gray-600 text-lg md:text-xl">
+              <p>Château Saint Georges</p>
+              <p>5 route de Saint Émilion</p>
+              <p>33570 Montagne</p>
+            </div>
+          <% end %>
         </div>
-        <div class="inline-block h-100 min-h-[1rem] w-px self-stretch bg-gray-500"></div>
-        <div class="justify-self-start text-left text-gray-600 text-lg md:text-xl">
-          <p>Château Saint Georges</p>
-          <p>5 route de Saint Émilion</p>
-          <p>33570 Montagne</p>
-        </div>
+        <%= link_to rsvp_path, class: "group relative inline-block focus:outline-none" do %>
+          <span class="absolute inset-0 translate-x-1.5 translate-y-1.5 rounded bg-primary-600 transition-transform group-hover:translate-x-0 group-hover:translate-y-0"></span>
+          <span class="relative inline-block rounded border-2 border-primary-800 px-8 py-3 font-bold uppercase tracking-widest text-white group-active:text-opacity-75">
+            <%= t("rsvp_button") %>
+          </span>
+        <% end %>
       </div>
-      <%= link_to t('navbar.rsvp'), rsvp_path, class: "no-underline text-white text-lg bg-primary-600 hover:bg-primary-700 focus:outline-none font-bold rounded px-4 py-2 text-center" %>
+      <div class="grid grid-cols-2 gap-4 mt-8">
+        <%= image_tag "breakfast", class: "w-full rounded-lg", alt: "Photo d'un petit déjeuner" %>
+        <%= image_tag "birthday-cake", class: "mt-4 w-full lg:mt-10 rounded-lg", alt: "Photo d'un gâteau d'anniversaire" %>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="container mx-auto px-4 bg-white py-12">
-    <div class="gap-16 items-center mx-auto max-w-screen-xl lg:grid lg:grid-cols-2">
-        <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">We didn't reinvent the wheel</h2>
-            <p class="mb-4">We are strategists, designers and developers. Innovators and problem solvers. Small enough to be simple and quick, but big enough to deliver the scope you want at the pace you need. Small enough to be simple and quick, but big enough to deliver the scope you want at the pace you need.</p>
-        </div>
-        <div class="grid grid-cols-2 gap-4 mt-8">
-            <img class="w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png" alt="office content 1">
-            <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png" alt="office content 2">
-        </div>
+<section class="bg-secondary-400">
+  <div class="container mx-auto px-4 py-12">
+    <div class="text-center">
+      <%= image_tag "icone-cadeau.svg", class: "mx-auto mb-4" %>
+      <p class="mt-4 max-w-5xl mx-auto text-white text-lg md:text-xl">
+        <%= t("home.gift.description") %>
+      </p>
     </div>
+  </div>
 </section>

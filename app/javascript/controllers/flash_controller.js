@@ -4,11 +4,11 @@ import { Controller } from "@hotwired/stimulus"
 export default class extends Controller {
   connect() {
     const flash = this.element;
-    if (flash) {
-      setTimeout(() => {
-        this.remove()
-      }, 5000);
-    }
+    // if (flash) {
+    //   setTimeout(() => {
+    //     this.remove()
+    //   }, 5000);
+    // }
   }
 
   remove() {

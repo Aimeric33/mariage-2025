@@ -1,1 +1,17 @@
 en:
+  home:
+    ceremony:
+      title: "Ceremony"
+      description: "We are very happy to announce our religious wedding ceremony and we count on your presence."
+    cocktail:
+      title: "Cocktail"
+      description: "We invite you to share a moment of conviviality around a cocktail party and we will also exchange our vows."
+    dinner:
+      title: "Dinner"
+      description: "A candlelit dinner will be offered to you next to delight your taste buds. Click on the button below to confirm your attendance and your food restrictions."
+    brunch:
+      title: "Brunch"
+      description: "For those who stay in the area the next day, we offer you to join us to share a brunch.\nWe will take this opportunity to celebrate Stéphanie's 30 candles."
+    gift:
+      title: "Gift"
+      description: "Your presence is the most beautiful gift you can give us. However, if you wish to offer us a gift, we have created a list on the site Zankyou."
