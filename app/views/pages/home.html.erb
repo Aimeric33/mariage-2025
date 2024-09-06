@@ -8,7 +8,7 @@
       <p class="mt-4 mb-8 max-w-2xl mx-auto text-gray-800 text-lg md:text-xl">
         <%= t("home.ceremony.description") %>
       </p>
-      <div class="mt-4 mx-auto grid grid-cols-[1fr_min-content_1fr] gap-4 items-center md:gap-16">
+      <div class="mt-4 mx-auto max-w-2xl grid grid-cols-[1fr_min-content_1fr] gap-4 items-center md:gap-16">
         <div class="justify-self-end">
           <p class="font-medium text-gray-600 text-xl md:text-3xl">15h00</p>
         </div>
@@ -35,7 +35,7 @@
       <p class="mt-4 mb-8 max-w-2xl mx-auto text-gray-800 text-lg md:text-xl">
         <%= t("home.cocktail.description") %>
       </p>
-      <div class="mt-4 mx-auto grid grid-cols-[1fr_min-content_1fr] gap-4 items-center md:gap-16">
+      <div class="mt-4 mx-auto max-w-2xl grid grid-cols-[1fr_min-content_1fr] gap-4 items-center md:gap-16">
         <div class="justify-self-end">
           <p class="font-medium text-gray-600 text-xl md:text-3xl">17h00</p>
         </div>
@@ -64,7 +64,7 @@
       </p>
       <%= link_to rsvp_path, class: "group relative inline-block focus:outline-none" do %>
         <span class="absolute inset-0 translate-x-1.5 translate-y-1.5 rounded bg-primary-600 transition-transform group-hover:translate-x-0 group-hover:translate-y-0"></span>
-        <span class="relative inline-block rounded border-2 border-primary-800 px-8 py-3 font-bold uppercase tracking-widest text-white group-active:text-opacity-75">
+        <span class="relative inline-block rounded px-8 py-3 font-bold uppercase tracking-widest text-white border-gold">
           <%= t("rsvp_button") %>
         </span>
       <% end %>
@@ -74,16 +74,16 @@
 
 <section class="bg-tertiary-50">
   <div class="container mx-auto px-4 py-12">
-    <div class="gap-8 items-center mx-auto max-w-screen-xl lg:grid lg:grid-cols-2">
-      <div class="text-center">
-        <%= image_tag "icone-brunch.svg", class: "mx-auto mb-4" %>
+    <div class="gap-8 md:gap-16 items-center mx-auto max-w-screen-xl lg:grid lg:grid-cols-2">
+      <div class="">
+        <%= image_tag "icone-brunch.svg", class: "mb-2" %>
         <h2 class="text-2xl uppercase font-bold text-gray-800 md:text-3xl">
           <%= t("home.brunch.title") %>
         </h2>
         <p class="mt-4 mb-8 max-w-2xl mx-auto text-gray-800 text-lg md:text-xl">
           <%= t("home.brunch.description") %>
         </p>
-        <div class="mt-4 mb-8 mx-auto grid grid-cols-[1fr_min-content_min-content_min-content_1fr] gap-4 items-center md:gap-8">
+        <div class="mt-4 mb-8 mx-auto grid grid-cols-[min-content_min-content_min-content_min-content_max-content] gap-4 items-center md:gap-8">
           <div class="justify-self-end">
             <p class="text-gray-600 text-lg md:text-xl">Dim. 10/08/25</p>
           </div>
@@ -102,7 +102,7 @@
         </div>
         <%= link_to rsvp_path, class: "group relative inline-block focus:outline-none" do %>
           <span class="absolute inset-0 translate-x-1.5 translate-y-1.5 rounded bg-primary-600 transition-transform group-hover:translate-x-0 group-hover:translate-y-0"></span>
-          <span class="relative inline-block rounded border-2 border-primary-800 px-8 py-3 font-bold uppercase tracking-widest text-white group-active:text-opacity-75">
+          <span class="relative inline-block rounded px-8 py-3 font-bold uppercase tracking-widest text-white border-gold">
             <%= t("rsvp_button") %>
           </span>
         <% end %>
