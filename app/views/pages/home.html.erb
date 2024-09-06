@@ -125,3 +125,30 @@
     </div>
   </div>
 </section>
+
+<section class="">
+  <div class="container mx-auto px-4 py-12">
+    <div class="text-center">
+      <h2 class="text-2xl uppercase font-bold text-gray-800 md:text-3xl">
+        On a pensé à vous !
+      </h2>
+      <p class="mt-4 mb-8 max-w-2xl mx-auto text-gray-800 text-lg md:text-xl">
+        Comme vous venez de loin pour la plupart, voici quelques informations pour vous aider à organiser votre séjour.
+      </p>
+      <div class="grid grid-cols-1 gap-8 mt-8 max-w-4xl mx-auto lg:grid-cols-2">
+        <%= link_to infos_pratiques_path, class: "relative flex flex-col justify-end overflow-hidden rounded px-8 pb-8 pt-40 w-full mx-auto" do %>
+          <%= image_tag "entree-chateau.jpg", alt: "Entrée du château Saint Georges", class: "absolute inset-0 h-full w-full object-cover" %>
+          <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+          <h3 class="z-10 mt-3 text-3xl font-bold text-white">Infos pratiques</h3>
+          <div class="z-10 gap-y-1 overflow-hidden text-lg text-gray-300">Hébergements, accès, parkings...</div>
+        <% end %>
+        <%= link_to infos_pratiques_path, class: "relative flex flex-col justify-end overflow-hidden rounded px-8 pb-8 pt-40 w-full mx-auto" do %>
+          <%= image_tag "saint-emilion.jpg", alt: "Saint-Emilion vu sur les toits et le clocher", class: "absolute inset-0 h-full w-full object-cover" %>
+          <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+          <h3 class="z-10 mt-3 text-3xl font-bold text-white">À visiter</h3>
+          <div class="z-10 gap-y-1 overflow-hidden text-lg text-gray-300">Avant ou après le mariage</div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
