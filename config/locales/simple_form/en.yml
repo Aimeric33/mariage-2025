@@ -29,3 +29,17 @@ en:
     # prompts:
     #   defaults:
     #     age: 'Select your age'
+    options:
+      guest:
+        dinner_presence:
+          dinner_invited: 'Invited'
+          dinner_yes: 'Present'
+          dinner_no: 'Absent'
+        brunch_presence:
+          brunch_invited: 'Invited'
+          brunch_yes: 'Present'
+          brunch_no: 'Absent'
+        food_restriction:
+          no_restriction: 'No food restriction'
+          vegetarian: 'Vegetarian (does not eat meat or fish)'
+          pescetarian: 'Pescetarian (does not eat meat but eats fish)'

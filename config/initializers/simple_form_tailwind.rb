@@ -82,13 +82,13 @@ SimpleForm.setup do |config|
   end
 
   # vertical input for radio buttons and check boxes
-  config.wrappers :vertical_collection, item_wrapper_class: 'flex items-center', item_label_class: 'my-1 ml-3 block text-sm font-medium text-gray-400', tag: 'div', class: 'my-4' do |b|
+  config.wrappers :vertical_collection, item_wrapper_class: 'flex items-center', item_label_class: 'my-1 ml-3 block text-gray-800', tag: 'div', class: 'my-4' do |b|
     b.use :html5
     b.optional :readonly
-    b.wrapper :legend_tag, tag: 'legend', class: 'mt-4 mb-2 font-medium text-gray-800', error_class: 'text-red-500' do |ba|
+    b.wrapper :legend_tag, tag: 'legend', class: 'mt-4 mb-2 font-bold text-primary-600', error_class: 'text-red-500' do |ba|
       ba.use :label_text
     end
-    b.use :input, class: 'focus:ring-2 focus:ring-indigo-500 ring-offset-2 h-4 w-4 text-indigo-600 border-gray-300 rounded', error_class: 'text-red-500', valid_class: 'text-green-400'
+    b.use :input, class: 'focus:ring-2 focus:ring-primary-500 ring-offset-2 h-4 w-4 text-primary-600 border-gray-300 rounded', error_class: 'text-red-500', valid_class: 'text-green-400'
     b.use :full_error, wrap_with: { tag: 'p', class: 'block mt-2 text-red-500 text-xs italic' }
     b.use :hint, wrap_with: { tag: 'p', class: 'mt-2 text-grey-700 text-xs italic' }
   end

@@ -1,0 +1,16 @@
+fr:
+  simple_form:
+    options:
+      guest:
+        dinner_presence:
+          dinner_invited: 'Invité(e)'
+          dinner_yes: 'Présent(e)'
+          dinner_no: 'Absent(e)'
+        brunch_presence:
+          brunch_invited: 'Invité(e)'
+          brunch_yes: 'Présent(e)'
+          brunch_no: 'Absent(e)'
+        food_restriction:
+          no_restriction: 'Aucune restriction alimentaire'
+          vegetarian: 'Végétarien(ne) (ne mange pas de viande ni de poisson)'
+          pescetarian: 'Pescétarien(ne) (ne mange pas de viande mais mange du poisson)'

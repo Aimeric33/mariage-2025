@@ -26,9 +26,9 @@ fr:
         phone: Téléphone
         address: Adresse
         child: Enfant
-        dinner_presence: Présence au vin d'honneur + soirée
-        brunch_presence: Présence au brunch du dimanche
-        food_restriction: Restrictions alimentaires
+        dinner_presence: "Je serais présent(e) au dîner :"
+        brunch_presence: "Je serais présent(e) au brunch :"
+        food_restriction: "J'ai des restrictions alimentaires :"
         created_at: Créé le
         updated_at: Mis à jour le
       guest/dinner_presence:
@@ -42,7 +42,6 @@ fr:
       guest/food_restriction:
         no_restriction: Aucune restriction alimentaire
         vegetarian: Végétarien(ne)
-        vegan: Végétalien(ne)
         pescetarian: Pescétarien(ne)
   date:
     abbr_day_names:

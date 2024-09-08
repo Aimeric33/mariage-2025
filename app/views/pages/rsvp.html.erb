@@ -4,18 +4,21 @@
       <h2 class="text-4xl font-handwriting font-semibold lg:text-6xl">
         Confirmez votre présence
       </h2>
-      <p class="mt-4 mb-8 max-w-2xl mx-auto text-gray-800 text-lg md:text-xl">
-        Nous serions ravis de vous compter parmi nous pour célébrer notre mariage. Merci de bien vouloir confirmer votre présence avant le 15 mars 2025 en remplissant le formulaire ci-dessous.
+      <p class="mt-4 max-w-2xl mx-auto text-gray-800 text-lg md:text-xl">
+        Nous serions ravis de vous compter parmi nous pour célébrer notre mariage.
+      </p>
+      <p class="mb-8 max-w-2xl mx-auto font-bold text-gray-800 text-lg md:text-xl">
+        Merci de bien vouloir confirmer votre présence (et celle des membres de votre famille) avant le 15 mars 2025 en remplissant le formulaire ci-dessous.
       </p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="container mx-auto max-w-3xl px-4 py-12">
+<section class="container mx-auto max-w-3xl px-4 pb-12">
   <div data-controller="update-guests">
     <div id="guests-forms">
-      <div data-controller="search-guest">
+      <div class="mt-8" data-controller="search-guest">
         <%= simple_form_for rsvp_path do |form_search| %>
           <%= form_search.input :search, label: 'Chercher un nom', wrapper: :vertical_form_select, collection: Guest.all, label_method: :full_name, value_method: :id, input_html: { data: { search_guest_target: "input", action: "change->search-guest#search", controller: "tom-select" }} %>
         <% end %>
@@ -25,7 +28,7 @@
         </div>
       </div>
     </div>
-    <%= link_to rsvp_path, class: "group relative inline-block focus:outline-none", data: { action: "click->update-guests#submit" } do %>
+    <%= link_to rsvp_path, class: "mt-8 group relative inline-block focus:outline-none", data: { action: "click->update-guests#submit" } do %>
       <span class="absolute inset-0 translate-x-1.5 translate-y-1.5 rounded bg-primary-600 transition-transform group-hover:translate-x-0 group-hover:translate-y-0"></span>
       <span class="relative inline-block rounded px-8 py-3 font-bold uppercase tracking-widest text-white border-gold">
         Enregistrer les réponses
