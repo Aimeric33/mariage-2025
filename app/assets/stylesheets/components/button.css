@@ -1,0 +1,13 @@
+.border-gold::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 0.25rem;
+  padding: 2px;
+  background: linear-gradient(to right top, #eab308 50%, #fef3c7);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}

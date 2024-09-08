@@ -10,7 +10,8 @@ module.exports = {
     './app/views/active_admin/**/*.{arb,erb,html,rb}',
     './app/views/admin/**/*.{arb,erb,html,rb}',
     './app/views/layouts/active_admin*.{erb,html}',
-    './app/javascript/**/*.js'
+    './app/javascript/**/*.js',
+    './config/initializers/simple_form_tailwind.rb',
   ],
   darkMode: "selector",
   plugins: [

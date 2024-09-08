@@ -9,6 +9,7 @@ module.exports = {
     './app/javascript/**/*.js',
     './app/views/**/*.{erb,haml,html,slim}',
     './app/assets/stylesheets/active_admin.css',
+    './config/initializers/simple_form_tailwind.rb',
   ],
   theme: {
     extend: {
@@ -40,7 +41,7 @@ module.exports = {
     },
   },
   plugins: [
-    require('@tailwindcss/forms'),
+    // require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),
     require('@tailwindcss/container-queries'),
     require(`${activeAdminPath}/plugin.js`),
