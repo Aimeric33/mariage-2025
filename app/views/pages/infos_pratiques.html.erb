@@ -12,7 +12,7 @@
   <div class="mx-auto max-w-screen-xl px-4 py-8 md:px-8 md:py-16">
     <div class="grid grid-cols-1 gap-8 items-center md:grid-cols-2 md:gap-16">
       <div class="relative order-last md:order-first">
-        <%= image_tag ("carte_france.svg"), class: "inset-0 h-full object-cover" %>
+        <%= image_tag ("carte_france.svg"), class: "rounded-lg inset-0 h-full object-cover" %>
       </div>
       <div>
         <h2 class="text-3xl font-bold sm:text-4xl">Venir à Bordeaux</h2>
@@ -41,17 +41,20 @@
   <div class="mx-auto max-w-screen-xl px-4 py-8 md:px-8 md:py-16">
     <div class="grid grid-cols-1 gap-8 items-center md:grid-cols-2 md:gap-16">
       <div class="relative order-last">
-        <%= image_tag ("mairie-bordeaux.webp"), class: "inset-0 h-full object-cover" %>
+        <%= image_tag ("mairie-bordeaux.webp"), class: "rounded-lg inset-0 h-full object-cover" %>
       </div>
       <div>
         <h2 class="text-3xl text-gray-800 font-bold sm:text-4xl">Cérémonie civile à Bordeaux</h2>
         <div>
           <p class="mt-2 text-gray-800">
             Nous ne pouvons malheureusement pas inviter tout le monde pour la cérémonie civile à l'Hotel de Ville de Bordeaux car les places sont limités par la Mairie.
-            <br>Mais pour ceux qui ont reçu l'invitation pour la cérémonie civile et qui souhaite s'y rendre voici quelques infos utiles 👇
+            Seuls ceux qui ont reçu l'invitation pour la cérémonie civile et qui souhaite s'y rendre sont invités.
           </p>
         </div>
         <div>
+          <p class="mt-4 text-gray-800 font-bold">⌚ Heure de début :
+            <span class="font-normal">10h15</span>
+          </p>
           <p class="mt-4 text-gray-800 font-bold">📌 Adresse :
             <span class="font-normal">
               <%= link_to "Place Pey Berland 33000 Bordeaux", "https://maps.app.goo.gl/ZH95DibwBQr1QH5t7", target: "_blank", class: "text-gray-800 decoration-gray-600 hover:underline" %>
@@ -75,7 +78,7 @@
   <div class="mx-auto max-w-screen-xl px-4 py-8 md:px-8 md:py-16">
     <div class="grid grid-cols-1 gap-8 items-center md:grid-cols-2 md:gap-16">
       <div class="relative order-last md:order-first">
-        <%= image_tag ("eglise-montagne.jpg"), class: "inset-0 h-full object-cover" %>
+        <%= image_tag ("eglise-montagne.jpg"), class: "rounded-lg inset-0 h-full object-cover" %>
       </div>
       <div>
         <h2 class="text-3xl text-gray-800 font-bold sm:text-4xl">Cérémonie religieuse à Montagne</h2>
@@ -106,7 +109,7 @@
   <div class="mx-auto max-w-screen-xl px-4 py-8 md:px-8 md:py-16">
     <div class="grid grid-cols-1 gap-8 items-center md:grid-cols-2 md:gap-16">
       <div class="relative order-last">
-        <%= image_tag ("eglise-montagne.jpg"), class: "inset-0 h-full object-cover" %>
+        <%= image_tag ("chateau-dessin.jpg"), class: "rounded-lg inset-0 h-full object-cover" %>
       </div>
       <div>
         <h2 class="text-3xl text-gray-800 font-bold sm:text-4xl">Réception au château Saint Georges</h2>
@@ -125,8 +128,63 @@
             </span>
           </p>
           <p class="mt-4 text-gray-800 font-bold">🅿️ Parking :</p>
-          <p class="mt-2 text-gray-800"><span class="underline">Allée à droite du château :</span> le parking se situe entre les vignes sous les tilleuls à droite du château (il sera indiqué à votre arrivée).</p>
+          <p class="mt-2 text-gray-800">Le parking se situe dans une allée entre les vignes sous les tilleuls à droite du château (il sera indiqué à votre arrivée).</p>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-tertiary-50">
+  <div class="mx-auto max-w-screen-xl px-4 py-8 md:px-8 md:py-16">
+    <div class="text-center">
+      <h2 class="text-3xl text-gray-800 font-bold sm:text-4xl">Hébergements à proximité</h2>
+      <p class="mt-2 max-w-4xl mx-auto text-gray-800">
+        Voici quelques hébergements à côté du château Saint Georges pour vous aider à organiser votre séjour. Si vous souhaitez un hébergement plus personnel, nous vous laissons chercher des Airbnb ou autres par vous-mêmes.
+      </p>
+    </div>
+    <div class="mt-8 grid grid-cols-1 md:grid-cols-3">
+      <div class="w-full max-w-sm overflow-hidden bg-white rounded-lg shadow transition-all duration-300 hover:translate-y-[-0.5rem] hover:shadow-xl">
+        <%= link_to "https://www.yellohvillage.fr/camping/yelloh_saint_emilion", class: "block hover:scale-100" do %>
+          <%= image_tag "yelloh_saint_emilion.jpg", class: "object-cover object-center w-full h-56" %>
+          <div class="px-6 py-4">
+            <p class="text-xl font-bold text-gray-800 ">Camping Yelloh! Saint Emilion</p>
+            <p class="mt-2 text-gray-800">Un camping 4 étoiles avec piscine, lac, chalets et emplacements tente. Tout proche du château !</p>
+            <div class="mt-4 space-y-2 text-gray-800">
+              <p class="">👥 Emplacements et chalets de 2 à 6 personnes</p>
+              <p class="">💶 À partir de 35€ par nuitée</p>
+              <p class="">📌 4 minutes en voiture du château</p>
+            </div>
+          </div>
+        <% end %>
+      </div>
+      <div class="w-full max-w-sm overflow-hidden bg-white rounded-lg shadow transition-all duration-300 hover:translate-y-[-0.5rem] hover:shadow-xl">
+        <%= link_to "https://www.yellohvillage.fr/camping/yelloh_saint_emilion", class: "block hover:scale-100" do %>
+          <%= image_tag "yelloh_saint_emilion.jpg", class: "object-cover object-center w-full h-56" %>
+          <div class="px-6 py-4">
+            <p class="text-xl font-bold text-gray-800 ">Hôtel</p>
+            <p class="mt-2 text-gray-800">Un camping 4 étoiles avec piscine, lac, chalets et emplacements tente. Tout proche du château !</p>
+            <div class="mt-4 space-y-2 text-gray-800">
+              <p class="">👥 Emplacements et chalets de 2 à 6 personnes</p>
+              <p class="">💶 À partir de 35€ par nuitée</p>
+              <p class="">📌 4 minutes en voiture du château</p>
+            </div>
+          </div>
+        <% end %>
+      </div>
+      <div class="w-full max-w-sm overflow-hidden bg-white rounded-lg shadow transition-all duration-300 hover:translate-y-[-0.5rem] hover:shadow-xl">
+        <%= link_to "https://www.yellohvillage.fr/camping/yelloh_saint_emilion", class: "block hover:scale-100" do %>
+          <%= image_tag "yelloh_saint_emilion.jpg", class: "object-cover object-center w-full h-56" %>
+          <div class="px-6 py-4">
+            <p class="text-xl font-bold text-gray-800 ">Chambres d'hôtes</p>
+            <p class="mt-2 text-gray-800">Un camping 4 étoiles avec piscine, lac, chalets et emplacements tente. Tout proche du château !</p>
+            <div class="mt-4 space-y-2 text-gray-800">
+              <p class="">👥 Emplacements et chalets de 2 à 6 personnes</p>
+              <p class="">💶 À partir de 35€ par nuitée</p>
+              <p class="">📌 4 minutes en voiture du château</p>
+            </div>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>
