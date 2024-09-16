@@ -15,3 +15,13 @@ fr:
     gift:
       title: "Cadeau"
       description: "Votre présence est le plus beau des cadeaux pour nous et pour ça, MERCI ! Seulement s'il vous tient à coeur de nous offrir un cadeau, une cagnotte sera à votre disposition sur place pour nous offrir notre voyage de noces."
+    other:
+      title: "On a pensé à vous !"
+      description: "Comme vous venez de loin pour la plupart, voici quelques informations pour vous aider à organiser votre séjour."
+      infos:
+        title: "Infos pratiques"
+        description: "Hébergements, accès, parkings..."
+      visit:
+        title: "À visiter"
+        description: "Avant ou après le mariage"
+    end: "Hâte de vous voir !"

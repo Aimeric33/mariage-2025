@@ -1,0 +1,21 @@
+en:
+  infos:
+    title: "Good to know"
+    bordeaux:
+      title: "Getting to Bordeaux"
+      train:
+        title: "By train"
+        description: "2h/2h30 from Paris Montparnasse. Think about organizing with someone who has a car to take you to the different locations."
+      car:
+        title: "By car"
+        description: "This is the transport we recommend because it will be more convenient to get to Saint-Emilion where the religious ceremony and reception will take place."
+        paris: "5h30 drive from Paris."
+        nantes: "3h30 drive from Nantes or Saumur."
+        lyon: "5h drive from Lyon."
+    civil:
+      title: "Civil ceremony in Bordeaux"
+      description: "Unfortunately, we cannot invite everyone to the civil ceremony at the Bordeaux City Hall because the places are limited by the City Hall.
+                    Only those who have received the invitation for the civil ceremony and who wish to attend are invited."
+      hour: "Start time: "
+      address: "Address: "
+      transport: "Public transport: "

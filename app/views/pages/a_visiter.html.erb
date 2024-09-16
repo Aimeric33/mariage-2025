@@ -1,1 +1,64 @@
-<h1>Pages#a_visiter</h1>
+<section class="">
+  <div class="container mx-auto px-4 pt-12">
+    <div class="text-center">
+      <h1 class="text-4xl font-handwriting font-semibold lg:text-6xl">
+        À visiter autour de Bordeaux
+      </h1>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="mx-auto max-w-screen-xl px-4 py-8 md:px-8 md:py-16">
+    <div class="text-center">
+      <h2 class="text-3xl text-gray-800 font-bold sm:text-4xl">Saint Emilion et les vignobles</h2>
+      <p class="mt-2 max-w-4xl mx-auto text-gray-800">
+        Voici quelques hébergements à côté du château Saint Georges pour vous aider à organiser votre séjour. Si vous souhaitez un hébergement plus personnel, nous vous laissons chercher des Airbnb ou autres par vous-mêmes.
+      </p>
+    </div>
+    <div class="mt-8 grid grid-cols-1 md:grid-cols-3">
+      <div class="w-full max-w-sm overflow-hidden bg-white rounded-lg shadow transition-all duration-300 hover:translate-y-[-0.5rem] hover:shadow-xl">
+        <%= link_to "https://www.yellohvillage.fr/camping/yelloh_saint_emilion", class: "block hover:scale-100" do %>
+          <%= image_tag "yelloh_saint_emilion.jpg", class: "object-cover object-center w-full h-56" %>
+          <div class="px-6 py-4">
+            <p class="text-xl font-bold text-gray-800 ">Camping Yelloh! Saint Emilion</p>
+            <p class="mt-2 text-gray-800">Un camping 4 étoiles avec piscine, lac, chalets et emplacements tente. Tout proche du château !</p>
+            <div class="mt-4 space-y-2 text-gray-800">
+              <p class="">👥 Emplacements et chalets de 2 à 6 personnes</p>
+              <p class="">💶 À partir de 35€ par nuitée</p>
+              <p class="">📌 4 minutes en voiture du château</p>
+            </div>
+          </div>
+        <% end %>
+      </div>
+      <div class="w-full max-w-sm overflow-hidden bg-white rounded-lg shadow transition-all duration-300 hover:translate-y-[-0.5rem] hover:shadow-xl">
+        <%= link_to "https://www.yellohvillage.fr/camping/yelloh_saint_emilion", class: "block hover:scale-100" do %>
+          <%= image_tag "hotel-ibis.jpg", class: "object-cover object-center w-full h-56" %>
+          <div class="px-6 py-4">
+            <p class="text-xl font-bold text-gray-800 ">Ibis Bordeaux Saint Emilion</p>
+            <p class="mt-2 text-gray-800">Un hôtel 3 étoiles avec petit-déjeuner, bar, restaurant et grande terrasse dans l'établissement</p>
+            <div class="mt-4 space-y-2 text-gray-800">
+              <p class="">👥 Chambres de 2 à 4 personnes</p>
+              <p class="">💶 À partir de 80€ par nuitée</p>
+              <p class="">📌 10 minutes en voiture du château</p>
+            </div>
+          </div>
+        <% end %>
+      </div>
+      <div class="w-full max-w-sm overflow-hidden bg-white rounded-lg shadow transition-all duration-300 hover:translate-y-[-0.5rem] hover:shadow-xl">
+        <%= link_to "https://www.yellohvillage.fr/camping/yelloh_saint_emilion", class: "block hover:scale-100" do %>
+          <%= image_tag "hotel-saint-emilion.jpg", class: "object-cover object-center w-full h-56" %>
+          <div class="px-6 py-4">
+            <p class="text-xl font-bold text-gray-800 ">Auberge de la Commanderie</p>
+            <p class="mt-2 text-gray-800">Une auberge dans le centre ville médiéval de Saint Emilion dans une ancienne maison templière</p>
+            <div class="mt-4 space-y-2 text-gray-800">
+              <p class="">👥 Chambres de 2 à 5 personnes</p>
+              <p class="">💶 À partir de 150€ par nuitée</p>
+              <p class="">📌 10 minutes en voiture du château</p>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>

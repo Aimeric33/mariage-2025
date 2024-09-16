@@ -1,0 +1,21 @@
+fr:
+  infos:
+    title: "Informations pratiques"
+    bordeaux:
+      title: "Venir à Bordeaux"
+      train:
+        title: "En train"
+        description: "2h/2h30 au départ de Paris Montparnasse. Pensez à vous organiser avec quelqu'un d'autre qui a une voiture pour vous emmener sur les différents lieux."
+      car:
+        title: "En voiture"
+        description: "C'est le transport que nous vous conseillons car ce sera plus pratique pour vous rendre à Saint-Emilion où aura lieu la cérémonie religieuse et la réception."
+        paris: "5h30 de route depuis Paris."
+        nantes: "3h30 de route depuis Nantes ou Saumur."
+        lyon: "5h de route depuis Lyon."
+    civil:
+      title: "Cérémonie civile à Bordeaux"
+      description: "Nous ne pouvons malheureusement pas inviter tout le monde pour la cérémonie civile à l'Hotel de Ville de Bordeaux car les places sont limités par la Mairie.
+                    Seuls ceux qui ont reçu l'invitation pour la cérémonie civile et qui souhaite s'y rendre sont invités."
+      hour: "Heure de début : "
+      address: "Adresse : "
+      transport: "Transports en commun : "

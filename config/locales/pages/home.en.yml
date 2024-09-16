@@ -14,4 +14,14 @@ en:
       description: "For those who stay in the area the next day, we offer you to join us to share a brunch.\nWe will take this opportunity to celebrate Stéphanie's 30 candles."
     gift:
       title: "Gift"
-      description: "Your presence is the most beautiful gift you can give us. However, if you wish to offer us a gift, we have created a list on the site Zankyou."
+      description: "Your presence is the most beautiful gift for us and for that, THANK YOU! Only if you want to give us a gift, a pot will be available on site to offer us our honeymoon."
+    other:
+      title: "We thought of you!"
+      description: "As you are coming from far away for most of you, here is some information to help you organize your stay."
+      infos:
+        title: "Good to know"
+        description: "Accommodations, access, parking..."
+      visit:
+        title: "To visit"
+        description: "Before or after the wedding"
+    end: "Can't wait to see you!"

@@ -2,7 +2,7 @@
   <div class="container mx-auto px-4 pt-12">
     <div class="text-center">
       <h1 class="text-4xl font-handwriting font-semibold lg:text-6xl">
-        Infos pratiques
+        <%= t("infos.title") %>
       </h1>
     </div>
   </div>
@@ -15,21 +15,20 @@
         <%= image_tag ("carte_france.svg"), class: "rounded-lg inset-0 h-full object-cover" %>
       </div>
       <div>
-        <h2 class="text-3xl font-bold sm:text-4xl">Venir à Bordeaux</h2>
+        <h2 class="text-3xl font-bold sm:text-4xl"><%= t("infos.bordeaux.title") %></h2>
         <div>
-          <p class="mt-4 text-gray-800 font-bold">🚅 En train</p>
+          <p class="mt-4 text-gray-800 font-bold">🚅 <span><%= t("infos.bordeaux.train.title") %></span></p>
           <p class="mt-2 text-gray-800">
-            2h/2h30 au départ de Paris Montparnasse.
-            <br>Pensez à vous organiser avec quelqu'un d'autre qui a une voiture pour vous emmener sur les différents lieux.
+            <%= t("infos.bordeaux.train.description") %>
           </p>
         </div>
         <div>
-          <p class="mt-4 font-bold">🚗 En voiture</p>
+          <p class="mt-4 font-bold">🚗 <span><%= t("infos.bordeaux.car.title") %></span></p>
           <p class="mt-2 text-gray-800">
-            C'est le transport que nous vous conseillons car ce sera plus pratique pour vous rendre à Saint-Emilion où aura lieu la cérémonie religieuse et la réception.
-            <br>5h30 de route depuis Paris.
-            <br>3h30 de route depuis Nantes ou Saumur.
-            <br>5h de route depuis Lyon.
+            <span><%= t("infos.bordeaux.car.description") %></span>
+            <br><%= t("infos.bordeaux.car.paris") %>
+            <br><%= t("infos.bordeaux.car.nantes") %>
+            <br><%= t("infos.bordeaux.car.lyon") %>
           </p>
         </div>
       </div>
@@ -44,18 +43,17 @@
         <%= image_tag ("mairie-bordeaux.webp"), class: "rounded-lg inset-0 h-full object-cover" %>
       </div>
       <div>
-        <h2 class="text-3xl text-gray-800 font-bold sm:text-4xl">Cérémonie civile à Bordeaux</h2>
+        <h2 class="text-3xl text-gray-800 font-bold sm:text-4xl"><%= t("infos.civil.title") %></h2>
         <div>
           <p class="mt-2 text-gray-800">
-            Nous ne pouvons malheureusement pas inviter tout le monde pour la cérémonie civile à l'Hotel de Ville de Bordeaux car les places sont limités par la Mairie.
-            Seuls ceux qui ont reçu l'invitation pour la cérémonie civile et qui souhaite s'y rendre sont invités.
+            <%= t("infos.civil.description") %>
           </p>
         </div>
         <div>
-          <p class="mt-4 text-gray-800 font-bold">⌚ Heure de début :
+          <p class="mt-4 text-gray-800 font-bold">⌚ <span><%= t("infos.civil.hour") %></span>
             <span class="font-normal">10h15</span>
           </p>
-          <p class="mt-4 text-gray-800 font-bold">📌 Adresse :
+          <p class="mt-4 text-gray-800 font-bold">📌 <span><%= t("infos.civil.address") %></span>
             <span class="font-normal">
               <%= link_to "Place Pey Berland 33000 Bordeaux", "https://maps.app.goo.gl/ZH95DibwBQr1QH5t7", target: "_blank", class: "text-gray-800 decoration-gray-600 hover:underline" %>
             </span>
@@ -64,7 +62,7 @@
           <p class="mt-4 text-gray-800 font-bold">🅿️ Parking :</p>
           <p class="mt-2 text-gray-800"><span class="underline">Stationnement dans la rue :</span> la mairie est en plein centre ville donc très compliqué de se garer dans les rues autour (environ 3-4€ selon le temps de stationnement).</p>
           <p class="mt-2 text-gray-800"><span class="underline">Parking souterrain :</span> le parking Metpark Pey Berland est très proche de la mairie et dispose de places suffisantes (environ 4-5€ selon le temps de stationnement).</p>
-          <p class="mt-4 text-gray-800 font-bold">🚋 Transports en commun :</p>
+          <p class="mt-4 text-gray-800 font-bold">🚋 <span><%= t("infos.civil.transport") %></p>
           <p class="mt-2 text-gray-800">
             Les lignes de Tram A et B desservent directement la mairie à l'arrêt Hôtel de Ville et de nombreux bus peuvent vous y amener. Par contre, prévoyez large en cas de problème pour être sûr d'être à l'heure.
             Plus d'infos sur les lignes ici : <%= link_to "lien", "https://www.infotbm.com/fr/lignes", target: "_blank", class: "text-gray-800 decoration-gray-600 hover:underline" %></p>
@@ -160,28 +158,28 @@
       </div>
       <div class="w-full max-w-sm overflow-hidden bg-white rounded-lg shadow transition-all duration-300 hover:translate-y-[-0.5rem] hover:shadow-xl">
         <%= link_to "https://www.yellohvillage.fr/camping/yelloh_saint_emilion", class: "block hover:scale-100" do %>
-          <%= image_tag "yelloh_saint_emilion.jpg", class: "object-cover object-center w-full h-56" %>
+          <%= image_tag "hotel-ibis.jpg", class: "object-cover object-center w-full h-56" %>
           <div class="px-6 py-4">
-            <p class="text-xl font-bold text-gray-800 ">Hôtel</p>
-            <p class="mt-2 text-gray-800">Un camping 4 étoiles avec piscine, lac, chalets et emplacements tente. Tout proche du château !</p>
+            <p class="text-xl font-bold text-gray-800 ">Ibis Bordeaux Saint Emilion</p>
+            <p class="mt-2 text-gray-800">Un hôtel 3 étoiles avec petit-déjeuner, bar, restaurant et grande terrasse dans l'établissement</p>
             <div class="mt-4 space-y-2 text-gray-800">
-              <p class="">👥 Emplacements et chalets de 2 à 6 personnes</p>
-              <p class="">💶 À partir de 35€ par nuitée</p>
-              <p class="">📌 4 minutes en voiture du château</p>
+              <p class="">👥 Chambres de 2 à 4 personnes</p>
+              <p class="">💶 À partir de 80€ par nuitée</p>
+              <p class="">📌 10 minutes en voiture du château</p>
             </div>
           </div>
         <% end %>
       </div>
       <div class="w-full max-w-sm overflow-hidden bg-white rounded-lg shadow transition-all duration-300 hover:translate-y-[-0.5rem] hover:shadow-xl">
         <%= link_to "https://www.yellohvillage.fr/camping/yelloh_saint_emilion", class: "block hover:scale-100" do %>
-          <%= image_tag "yelloh_saint_emilion.jpg", class: "object-cover object-center w-full h-56" %>
+          <%= image_tag "hotel-saint-emilion.jpg", class: "object-cover object-center w-full h-56" %>
           <div class="px-6 py-4">
-            <p class="text-xl font-bold text-gray-800 ">Chambres d'hôtes</p>
-            <p class="mt-2 text-gray-800">Un camping 4 étoiles avec piscine, lac, chalets et emplacements tente. Tout proche du château !</p>
+            <p class="text-xl font-bold text-gray-800 ">Auberge de la Commanderie</p>
+            <p class="mt-2 text-gray-800">Une auberge dans le centre ville médiéval de Saint Emilion dans une ancienne maison templière</p>
             <div class="mt-4 space-y-2 text-gray-800">
-              <p class="">👥 Emplacements et chalets de 2 à 6 personnes</p>
-              <p class="">💶 À partir de 35€ par nuitée</p>
-              <p class="">📌 4 minutes en voiture du château</p>
+              <p class="">👥 Chambres de 2 à 5 personnes</p>
+              <p class="">💶 À partir de 150€ par nuitée</p>
+              <p class="">📌 10 minutes en voiture du château</p>
             </div>
           </div>
         <% end %>
