@@ -18,4 +18,27 @@ en:
                     Only those who have received the invitation for the civil ceremony and who wish to attend are invited."
       hour: "Start time: "
       address: "Address: "
-      transport: "Public transport: "
+      parking:
+        street:
+          title: "Street parking:"
+          description: " the city hall is in the city center so it is very complicated to park in the streets around (around 3-4€ depending on the parking time)."
+        underground:
+          title: "Underground parking:"
+          description: " the Metpark Pey Berland parking is very close to the city hall and has sufficient spaces (around 4-5€ depending on the parking time)."
+      transport:
+        title: "Public transport: "
+        description: "Tram lines A and B directly serve the city hall at the Hôtel de Ville stop and many buses can take you there.
+                      However, plan ahead in case of problems to make sure you are on time. More information on the lines here: "
+        link: "link"
+    church:
+      title: "Religious ceremony in Montagne"
+      description: "The church is located in Montagne, a small village 10 minutes from Saint-Emilion and about 1 hour from Bordeaux (car required). Allow time to get there."
+      hour: "Start time: "
+      address: "Address: "
+      parking:
+        front:
+          title: "In front of the church (priority to people with reduced mobility):"
+          description: " small parking lot with a few spaces at the back of the small square between the Bellevue castle and FL Coiffure behind a small cross."
+        around:
+          title: "3 minutes walk from the church:"
+          description: " two parking lots with more spaces are accessible rue des Ecoles behind the church."

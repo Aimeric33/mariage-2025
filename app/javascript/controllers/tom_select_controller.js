@@ -17,7 +17,7 @@ export default class extends Controller {
         direction: "asc"
       },
       maxItems: 1,
-      maxOptions: 20,
+      maxOptions: 15,
       closeAfterSelect: true,
       render: {
         no_results: () => {

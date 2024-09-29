@@ -73,15 +73,15 @@
             <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 448 512"><path d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM192 256l48 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-48 0 0 64zm48 64l-48 0 0 32c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-64 0-120c0-22.1 17.9-40 40-40l72 0c53 0 96 43 96 96s-43 96-96 96z"/></svg>
             <span>Parking :</span>
           </p>
-          <p class="mt-2 text-gray-800"><span class="underline">Stationnement dans la rue :</span> la mairie est en plein centre ville donc très compliqué de se garer dans les rues autour (environ 3-4€ selon le temps de stationnement).</p>
-          <p class="mt-2 text-gray-800"><span class="underline">Parking souterrain :</span> le parking Metpark Pey Berland est très proche de la mairie et dispose de places suffisantes (environ 4-5€ selon le temps de stationnement).</p>
+          <p class="mt-2 text-gray-800"><span class="underline"><%= t("infos.civil.parking.street.title") %></span><%= t("infos.civil.parking.street.description") %></p>
+          <p class="mt-2 text-gray-800"><span class="underline"><%= t("infos.civil.parking.underground.title") %></span><%= t("infos.civil.parking.underground.description") %></p>
           <p class="mt-4 text-gray-800 font-bold flex items-center gap-2">
             <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 448 512"><path d="M86.8 48c-12.2 0-23.6 5.5-31.2 15L42.7 79C34.5 89.3 19.4 91 9 82.7S-3 59.4 5.3 49L18 33C34.7 12.2 60 0 86.8 0L361.2 0c26.7 0 52 12.2 68.7 33l12.8 16c8.3 10.4 6.6 25.5-3.8 33.7s-25.5 6.6-33.7-3.7L392.5 63c-7.6-9.5-19.1-15-31.2-15L248 48l0 48 40 0c53 0 96 43 96 96l0 160c0 30.6-14.3 57.8-36.6 75.4l65.5 65.5c7.1 7.1 2.1 19.1-7.9 19.1l-39.7 0c-8.5 0-16.6-3.4-22.6-9.4L288 448l-128 0-54.6 54.6c-6 6-14.1 9.4-22.6 9.4L43 512c-10 0-15-12.1-7.9-19.1l65.5-65.5C78.3 409.8 64 382.6 64 352l0-160c0-53 43-96 96-96l40 0 0-48L86.8 48zM160 160c-17.7 0-32 14.3-32 32l0 32c0 17.7 14.3 32 32 32l128 0c17.7 0 32-14.3 32-32l0-32c0-17.7-14.3-32-32-32l-128 0zm32 192a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm96 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg>
-            <span><%= t("infos.civil.transport") %>
+            <span><%= t("infos.civil.transport.title") %>
           </p>
           <p class="mt-2 text-gray-800">
-            Les lignes de Tram A et B desservent directement la mairie à l'arrêt Hôtel de Ville et de nombreux bus peuvent vous y amener. Par contre, prévoyez large en cas de problème pour être sûr d'être à l'heure.
-            Plus d'infos sur les lignes ici : <%= link_to "lien", "https://www.infotbm.com/fr/lignes", target: "_blank", class: "text-gray-800 decoration-gray-600 hover:underline" %></p>
+            <%= t("infos.civil.transport.description") %>
+            <%= link_to t("infos.civil.transport.link"), "https://www.infotbm.com/fr/lignes", target: "_blank", class: "text-gray-800 decoration-gray-600 hover:underline" %></p>
         </div>
       </div>
     </div>
@@ -95,21 +95,21 @@
         <%= image_tag ("eglise-montagne.jpg"), class: "rounded-lg inset-0 h-full object-cover" %>
       </div>
       <div>
-        <h2 class="text-3xl text-gray-800 font-bold sm:text-4xl">Cérémonie religieuse à Montagne</h2>
+        <h2 class="text-3xl text-gray-800 font-bold sm:text-4xl"><%= t("infos.church.title") %></h2>
         <div>
           <p class="mt-2 text-gray-800">
-            L'église se situe à Montagne, un petit village à 10 minutes de Saint-Emilion et à environ 1h de Bordeaux (voiture obligatoire). Prévoyez le temps de trajet pour vous y rendre.
+            <%= t("infos.church.description") %>
           </p>
         </div>
         <div>
           <p class="mt-4 text-gray-800 font-bold flex items-center gap-2">
             <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 512 512"><path d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
-            <span>Heure de début :</span>
-            <span class="font-normal">15h00</span>
+            <span><%= t("infos.church.hour") %></span>
+            <span class="font-normal">14h30</span>
           </p>
           <p class="mt-4 text-gray-800 font-bold flex items-center gap-2">
             <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 320 512"><path d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480l0-162.9c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9L192 480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"/></svg>
-            <span>Adresse :</span>
+            <span><%= t("infos.church.address") %></span>
             <span class="font-normal">
               <%= link_to "24 Grand Rue 33570 Montagne", "https://maps.app.goo.gl/AiiifXHwdKRMW8ma8", target: "_blank", class: "text-gray-800 decoration-gray-600 hover:underline" %>
             </span>
@@ -118,8 +118,8 @@
             <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 448 512"><path d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM192 256l48 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-48 0 0 64zm48 64l-48 0 0 32c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-64 0-120c0-22.1 17.9-40 40-40l72 0c53 0 96 43 96 96s-43 96-96 96z"/></svg>
             <span>Parking :</span>
           </p>
-          <p class="mt-2 text-gray-800"><span class="underline">En face de l'église (priorité aux personnes à mobilité réduite):</span> petit parking de quelques places au fond de la petite place entre le château Bellevue et FL Coiffure derrière une petit croix.</p>
-          <p class="mt-2 text-gray-800"><span class="underline">A 3 minutes à pied de l'église :</span> deux parkings avec plus de places sont accessibles rue des Ecoles derrière l'église.</p>
+          <p class="mt-2 text-gray-800"><span class="underline"><%= t("infos.church.parking.front.title") %></span><%= t("infos.church.parking.front.description") %></p>
+          <p class="mt-2 text-gray-800"><span class="underline"><%= t("infos.church.parking.around.title") %></span><%= t("infos.church.parking.around.description") %></p>
         </div>
       </div>
     </div>

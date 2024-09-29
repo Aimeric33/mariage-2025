@@ -22,6 +22,19 @@
   &>input {
     line-height: 1.5rem !important;
   }
+
+  &::after {
+    content: '';
+    background-image: url('chevron-down-solid.svg');
+    background-size: 1rem 1rem;
+    height: 1rem;
+    width: 1rem;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
 }
 
 

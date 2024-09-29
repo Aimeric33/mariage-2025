@@ -1,12 +1,12 @@
 <h1>Modifier un invité</h1>
 
 <%= turbo_frame_tag "edit_form_#{@guest.id}" do %>
-  <p class="text-2xl mb-8">👋 Coucou <span class="font-bold"><%= @guest.first_name %></span>, seras-tu là ?</p>
+  <p class="text-2xl mb-4">👋 Coucou <span class="font-bold"><%= @guest.first_name %></span>, seras-tu là ?</p>
   <%= simple_form_for @guest, html: { data: { update_guests_target: "form" }} do |guest_form| %>
     <%= guest_form.input :dinner_presence, as: :radio_buttons, collection: [:dinner_yes, :dinner_no] %>
     <%= guest_form.input :brunch_presence, as: :radio_buttons, collection: [:brunch_yes, :brunch_no] %>
     <%= guest_form.input :food_restriction, as: :radio_buttons, collection: [:no_restriction, :vegetarian, :pescetarian] %>
   <% end %>
 
-  <%= link_to "Confirmer pour une autre personne", rsvp_path, data: { turbo_stream: true}, class: "inline-block px-8 py-3 rounded border border-primary-600 text-primary-600" %>
+  <%= link_to "Confirmer pour une autre personne", rsvp_path, data: { turbo_stream: true}, class: "inline-block px-8 py-3 rounded border border-primary-600 text-primary-600 bg-tertiary-50 transition-colors hover:bg-tertiary-100" %>
 <% end %>

@@ -18,4 +18,27 @@ fr:
                     Seuls ceux qui ont reçu l'invitation pour la cérémonie civile et qui souhaite s'y rendre sont invités."
       hour: "Heure de début : "
       address: "Adresse : "
-      transport: "Transports en commun : "
+      parking:
+        street:
+          title: "Stationnement dans la rue :"
+          description: " la mairie est en plein centre ville donc très compliqué de se garer dans les rues autour (environ 3-4€ selon le temps de stationnement)."
+        underground:
+          title: "Parking souterrain :"
+          description: " le parking Metpark Pey Berland est très proche de la mairie et dispose de places suffisantes (environ 4-5€ selon le temps de stationnement)."
+      transport:
+        title: "Transports en commun : "
+        description: "Les lignes de Tram A et B desservent directement la mairie à l'arrêt Hôtel de Ville et de nombreux bus peuvent vous y amener.
+                      Par contre, prévoyez large en cas de problème pour être sûr d'être à l'heure. Plus d'infos sur les lignes ici : "
+        link: "lien"
+    church:
+      title: "Cérémonie religieuse à Montagne"
+      description: "L'église se situe à Montagne, un petit village à 10 minutes de Saint-Emilion et à environ 1h de Bordeaux (voiture obligatoire). Prévoyez le temps de trajet pour vous y rendre."
+      hour: "Heure de début : "
+      address: "Adresse : "
+      parking:
+        front:
+          title: "En face de l'église (priorité aux personnes à mobilité réduite) :"
+          description: " petit parking de quelques places au fond de la petite place entre le château Bellevue et FL Coiffure derrière une petit croix."
+        around:
+          title: "A 3 minutes à pied de l'église :"
+          description: " deux parkings avec plus de places sont accessibles rue des Ecoles derrière l'église."
