@@ -9,7 +9,7 @@ module.exports = {
     './app/javascript/**/*.js',
     './app/views/**/*.{erb,haml,html,slim}',
     './app/assets/stylesheets/active_admin.css',
-    './config/initializers/simple_form_tailwind.rb',
+    './config/initializers/simple_form_tailwind.rb'
   ],
   theme: {
     extend: {
