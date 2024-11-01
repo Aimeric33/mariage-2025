@@ -19,7 +19,16 @@
             <%= link_to t('navbar.home'), root_path, class: "block py-2 px-3 no-underline text-lg text-gray-800 hover:text-primary-600 md:p-0", data: { active_link_target: "link" } %>
           </li>
           <li>
-            <%= link_to t('navbar.infos'), infos_pratiques_path, class: "block py-2 px-3 no-underline text-lg text-gray-800 hover:text-primary-600 md:p-0", data: { active_link_target: "link" } %>
+            <div class="dropdown relative transition-all transform">
+              <%= link_to t('navbar.infos'), infos_pratiques_path, class: "block py-2 px-3 no-underline text-lg text-gray-800 hover:text-primary-600 md:p-0", data: { active_link_target: "link" } %>
+              <div class="dropdown-content transition-all transform absolute py-2 px-3 rounded">
+                <%= link_to "Venir à Bordeaux", infos_pratiques_path(anchor: "bordeaux"), class: "block py-2 px-3 no-underline text-md font-normal text-gray-800 hover:text-primary-600 md:p-0"%>
+                <%= link_to "Cérémonie civile", infos_pratiques_path(anchor: "mairie"), class: "block py-2 px-3 no-underline text-md font-normal text-gray-800 hover:text-primary-600 md:p-0"%>
+                <%= link_to "Cérémonie religieuse", infos_pratiques_path(anchor: "eglise"), class: "block py-2 px-3 no-underline text-md font-normal text-gray-800 hover:text-primary-600 md:p-0"%>
+                <%= link_to "Réception au château", infos_pratiques_path(anchor: "reception"), class: "block py-2 px-3 no-underline text-md font-normal text-gray-800 hover:text-primary-600 md:p-0"%>
+                <%= link_to "Hébergements à proximité", infos_pratiques_path(anchor: "hebergement"), class: "block py-2 px-3 no-underline text-md font-normal text-gray-800 hover:text-primary-600 md:p-0"%>
+              </div>
+            </div>
           </li>
           <li>
             <%= link_to t('navbar.to_visit'), a_visiter_path, class: "block py-2 px-3 no-underline text-lg text-gray-800 hover:text-primary-600 md:p-0", data: { active_link_target: "link" } %>
