@@ -1,6 +1,14 @@
 fr:
   navbar:
     home: "Accueil"
-    infos: "Infos pratiques"
+    infos:
+      link: "Infos pratiques"
+      dropdown:
+        bordeaux: "Venir à Bordeaux"
+        civil: "Cérémonie civile"
+        church: "Cérémonie religieuse"
+        diner: "Réception au château"
+        dress_code: "Dress code"
+        accommodations: "Hébergements proches"
     to_visit: "À visiter"
   rsvp_button: "Confirmer ma présence"

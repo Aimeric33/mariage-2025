@@ -133,21 +133,21 @@
         <%= image_tag ("chateau-dessin.jpg"), class: "rounded-lg inset-0 h-full object-cover" %>
       </div>
       <div>
-        <h2 class="text-3xl text-gray-800 font-bold sm:text-4xl">Réception au château Saint Georges</h2>
+        <h2 class="text-3xl text-gray-800 font-bold sm:text-4xl"><%= t("infos.diner.title") %></h2>
         <div>
           <p class="mt-2 text-gray-800">
-            Le château Saint Georges se situe à quelques minutes en voiture ou à pied de l'église au milieu des vignes.
+            <%= t("infos.diner.description") %>
           </p>
         </div>
         <div>
           <p class="mt-4 text-gray-800 font-bold flex items-center gap-2">
             <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 512 512"><path d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
-            <span>Heure de début :</span>
-            <span class="font-normal">17h00</span>
+            <span><%= t("infos.diner.hour") %></span>
+            <span class="font-normal">16h00</span>
           </p>
           <p class="mt-4 text-gray-800 font-bold flex items-center gap-2">
             <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 320 512"><path d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480l0-162.9c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9L192 480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"/></svg>
-            <span>Adresse :</span>
+            <span><%= t("infos.diner.address") %></span>
             <span class="font-normal">
               <%= link_to "5 route de Saint Émilion 33570 Montagne", "https://maps.app.goo.gl/zsWwEX8tTtD8crZn6", target: "_blank", class: "text-gray-800 decoration-gray-600 hover:underline" %>
             </span>
@@ -156,8 +156,24 @@
             <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 448 512"><path d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM192 256l48 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-48 0 0 64zm48 64l-48 0 0 32c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-64 0-120c0-22.1 17.9-40 40-40l72 0c53 0 96 43 96 96s-43 96-96 96z"/></svg>
             <span>Parking :</span>
           </p>
-          <p class="mt-2 text-gray-800">Le parking se situe dans une allée entre les vignes sous les tilleuls à droite du château (il sera indiqué à votre arrivée).</p>
+          <p class="mt-2 text-gray-800"><%= t("infos.diner.parking") %></p>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="dress-code">
+  <div class="mx-auto max-w-screen-xl px-4 py-8 md:px-8 md:py-16">
+    <div class="grid grid-cols-1 gap-8 items-center">
+      <div class="relative">
+        <div class="text-center">
+          <h2 class="text-3xl text-gray-800 font-bold sm:text-4xl">Dress code</h2>
+          <p class="mt-2 max-w-4xl mx-auto text-gray-800">
+            Le thème de notre mariage sera "Chic et Chaleureux". Ce moodboard vous propose quelques couleurs et styles adaptés à notre thème. Aucune obligation mais un petit clin d'oeil à ce thème serait chouette !
+          </p>
+        </div>
+        <%= image_tag ("dress_code.png"), class: "mx-auto rounded-lg inset-0 h-full object-cover md:w-[50rem]" %>
       </div>
     </div>
   </div>
@@ -166,9 +182,9 @@
 <section id="hebergement" class="bg-tertiary-50">
   <div class="mx-auto max-w-screen-xl px-4 py-8 md:px-8 md:py-16">
     <div class="text-center">
-      <h2 class="text-3xl text-gray-800 font-bold sm:text-4xl">Hébergements à proximité</h2>
+      <h2 class="text-3xl text-gray-800 font-bold sm:text-4xl"><%= t("infos.accommodation.title") %></h2>
       <p class="mt-2 max-w-4xl mx-auto text-gray-800">
-        Voici quelques hébergements à côté du château Saint Georges pour vous aider à organiser votre séjour. Si vous souhaitez un hébergement plus personnel, nous vous laissons chercher des Airbnb ou autres par vous-mêmes.
+        <%= t("infos.accommodation.description") %>
       </p>
     </div>
     <div class="mt-8 grid grid-cols-1 md:grid-cols-3">
@@ -176,20 +192,20 @@
         <%= link_to "https://www.yellohvillage.fr/camping/yelloh_saint_emilion", target: "_blank", class: "block hover:scale-100" do %>
           <%= image_tag "yelloh_saint_emilion.jpg", class: "object-cover object-center w-full h-56" %>
           <div class="px-6 py-4">
-            <p class="text-xl font-bold text-gray-800 ">Camping Yelloh! Saint Emilion</p>
-            <p class="mt-2 text-gray-800">Un camping 4 étoiles avec piscine, lac, chalets et emplacements tente. Tout proche du château !</p>
+            <p class="text-xl font-bold text-gray-800 "><%= t("infos.accommodation.camping.name") %></p>
+            <p class="mt-2 text-gray-800"><%= t("infos.accommodation.camping.description") %></p>
             <div class="mt-4 space-y-2 text-gray-800">
               <p class="flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 640 512"><path d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM609.3 512l-137.8 0c5.4-9.4 8.6-20.3 8.6-32l0-8c0-60.7-27.1-115.2-69.8-151.8c2.4-.1 4.7-.2 7.1-.2l61.4 0C567.8 320 640 392.2 640 481.3c0 17-13.8 30.7-30.7 30.7zM432 256c-31 0-59-12.6-79.3-32.9C372.4 196.5 384 163.6 384 128c0-26.8-6.6-52.1-18.3-74.3C384.3 40.1 407.2 32 432 32c61.9 0 112 50.1 112 112s-50.1 112-112 112z"/></svg>
-                Emplacements et chalets de 2 à 6 personnes
+                <%= t("infos.accommodation.camping.size") %>
               </p>
               <p class="flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 320 512"><path d="M48.1 240c-.1 2.7-.1 5.3-.1 8l0 16c0 2.7 0 5.3 .1 8L32 272c-17.7 0-32 14.3-32 32s14.3 32 32 32l28.3 0C89.9 419.9 170 480 264 480l24 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-24 0c-57.9 0-108.2-32.4-133.9-80L256 336c17.7 0 32-14.3 32-32s-14.3-32-32-32l-143.8 0c-.1-2.6-.2-5.3-.2-8l0-16c0-2.7 .1-5.4 .2-8L256 240c17.7 0 32-14.3 32-32s-14.3-32-32-32l-125.9 0c25.7-47.6 76-80 133.9-80l24 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-24 0C170 32 89.9 92.1 60.3 176L32 176c-17.7 0-32 14.3-32 32s14.3 32 32 32l16.1 0z"/></svg>
-                À partir de 35€ par nuitée
+                <%= t("infos.accommodation.camping.price") %>
               </p>
               <p class="flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 320 512"><path d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480l0-162.9c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9L192 480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"/></svg>
-                4 minutes en voiture du château
+                <%= t("infos.accommodation.camping.place") %>
               </p>
             </div>
           </div>
@@ -199,20 +215,20 @@
         <%= link_to "https://all.accor.com/hotel/8510/index.fr.shtml?", target: "_blank", class: "block hover:scale-100" do %>
           <%= image_tag "hotel-ibis.jpg", class: "object-cover object-center w-full h-56" %>
           <div class="px-6 py-4">
-            <p class="text-xl font-bold text-gray-800 ">Ibis Bordeaux Saint Emilion</p>
-            <p class="mt-2 text-gray-800">Un hôtel 3 étoiles avec petit-déjeuner, bar, restaurant et grande terrasse dans l'établissement</p>
+            <p class="text-xl font-bold text-gray-800 "><%= t("infos.accommodation.hotel.name") %></p>
+            <p class="mt-2 text-gray-800"><%= t("infos.accommodation.hotel.description") %></p>
             <div class="mt-4 space-y-2 text-gray-800">
               <p class="flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 640 512"><path d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM609.3 512l-137.8 0c5.4-9.4 8.6-20.3 8.6-32l0-8c0-60.7-27.1-115.2-69.8-151.8c2.4-.1 4.7-.2 7.1-.2l61.4 0C567.8 320 640 392.2 640 481.3c0 17-13.8 30.7-30.7 30.7zM432 256c-31 0-59-12.6-79.3-32.9C372.4 196.5 384 163.6 384 128c0-26.8-6.6-52.1-18.3-74.3C384.3 40.1 407.2 32 432 32c61.9 0 112 50.1 112 112s-50.1 112-112 112z"/></svg>
-                Chambres de 2 à 4 personnes
+                <%= t("infos.accommodation.hotel.size") %>
               </p>
               <p class="flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 320 512"><path d="M48.1 240c-.1 2.7-.1 5.3-.1 8l0 16c0 2.7 0 5.3 .1 8L32 272c-17.7 0-32 14.3-32 32s14.3 32 32 32l28.3 0C89.9 419.9 170 480 264 480l24 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-24 0c-57.9 0-108.2-32.4-133.9-80L256 336c17.7 0 32-14.3 32-32s-14.3-32-32-32l-143.8 0c-.1-2.6-.2-5.3-.2-8l0-16c0-2.7 .1-5.4 .2-8L256 240c17.7 0 32-14.3 32-32s-14.3-32-32-32l-125.9 0c25.7-47.6 76-80 133.9-80l24 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-24 0C170 32 89.9 92.1 60.3 176L32 176c-17.7 0-32 14.3-32 32s14.3 32 32 32l16.1 0z"/></svg>
-                À partir de 80€ par nuitée
+                <%= t("infos.accommodation.hotel.price") %>
               </p>
               <p class="flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 320 512"><path d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480l0-162.9c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9L192 480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"/></svg>
-                10 minutes en voiture du château
+                <%= t("infos.accommodation.hotel.place") %>
               </p>
             </div>
           </div>
@@ -222,20 +238,20 @@
         <%= link_to "https://www.aubergedelacommanderie.com/chambres/", target: "_blank", class: "block hover:scale-100" do %>
           <%= image_tag "hotel-saint-emilion.jpg", class: "object-cover object-center w-full h-56" %>
           <div class="px-6 py-4">
-            <p class="text-xl font-bold text-gray-800 ">Auberge de la Commanderie</p>
-            <p class="mt-2 text-gray-800">Une auberge dans le centre ville médiéval de Saint Emilion dans une ancienne maison templière</p>
+            <p class="text-xl font-bold text-gray-800 "><%= t("infos.accommodation.auberge.name") %></p>
+            <p class="mt-2 text-gray-800"><%= t("infos.accommodation.auberge.description") %></p>
             <div class="mt-4 space-y-2 text-gray-800">
               <p class="flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 640 512"><path d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM609.3 512l-137.8 0c5.4-9.4 8.6-20.3 8.6-32l0-8c0-60.7-27.1-115.2-69.8-151.8c2.4-.1 4.7-.2 7.1-.2l61.4 0C567.8 320 640 392.2 640 481.3c0 17-13.8 30.7-30.7 30.7zM432 256c-31 0-59-12.6-79.3-32.9C372.4 196.5 384 163.6 384 128c0-26.8-6.6-52.1-18.3-74.3C384.3 40.1 407.2 32 432 32c61.9 0 112 50.1 112 112s-50.1 112-112 112z"/></svg>
-                Chambres de 2 à 5 personnes
+                <%= t("infos.accommodation.auberge.size") %>
               </p>
               <p class="flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 320 512"><path d="M48.1 240c-.1 2.7-.1 5.3-.1 8l0 16c0 2.7 0 5.3 .1 8L32 272c-17.7 0-32 14.3-32 32s14.3 32 32 32l28.3 0C89.9 419.9 170 480 264 480l24 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-24 0c-57.9 0-108.2-32.4-133.9-80L256 336c17.7 0 32-14.3 32-32s-14.3-32-32-32l-143.8 0c-.1-2.6-.2-5.3-.2-8l0-16c0-2.7 .1-5.4 .2-8L256 240c17.7 0 32-14.3 32-32s-14.3-32-32-32l-125.9 0c25.7-47.6 76-80 133.9-80l24 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-24 0C170 32 89.9 92.1 60.3 176L32 176c-17.7 0-32 14.3-32 32s14.3 32 32 32l16.1 0z"/></svg>
-                À partir de 150€ par nuitée
+                <%= t("infos.accommodation.auberge.price") %>
               </p>
               <p class="flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 320 512"><path d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480l0-162.9c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9L192 480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"/></svg>
-                10 minutes en voiture du château
+                <%= t("infos.accommodation.auberge.place") %>
               </p>
             </div>
           </div>

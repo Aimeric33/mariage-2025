@@ -32,7 +32,7 @@ fr:
         link: "lien"
     church:
       title: "Cérémonie religieuse à Montagne"
-      description: "L'église se situe à Montagne, un petit village à 10 minutes de Saint-Emilion et à environ 1h de Bordeaux (voiture obligatoire). Prévoyez le temps de trajet pour vous y rendre."
+      description: "L'église se situe à Montagne, un petit village à 10 minutes de Saint-Emilion et à environ 1h de Bordeaux (voiture obligatoire). Vous êtes tous les bienvenus évidemment !"
       hour: "Heure de début : "
       address: "Adresse : "
       parking:
@@ -42,3 +42,30 @@ fr:
         around:
           title: "A 3 minutes à pied de l'église :"
           description: " deux parkings avec plus de places sont accessibles rue des Ecoles derrière l'église."
+    diner:
+      title: "Réception au château Saint Georges"
+      description: "Le château Saint Georges est à quelques minutes en voiture ou à pied de l'église au milieu des vignes. Nous ferons une petite cérémonie d'échanges de voeux suivie du vin d'honneur et du dîner."
+      hour: "Heure de début : "
+      address: "Adresse : "
+      parking: "Le parking se situe dans une allée entre les vignes sous les tilleuls à droite du château (il sera indiqué à votre arrivée)."
+    accommodation:
+      title: "Hébergements à proximité"
+      description: "Voici quelques hébergements à côté du château Saint Georges pour vous aider à organiser votre séjour. Si vous souhaitez un hébergement plus personnel, nous vous laissons chercher des Airbnb ou autres par vous-mêmes."
+      camping:
+        name: "Camping Yelloh! Saint Emilion"
+        description: "Un camping 4 étoiles avec piscine, lac, chalets et emplacements tente. Tout proche du château !"
+        size: "Emplacements et chalets de 2 à 6 personnes"
+        price: "À partir de 35€ par nuitée"
+        place: "4 minutes en voiture du château"
+      hotel:
+        name: "Ibis Bordeaux Saint Emilion"
+        description: "Un hôtel 3 étoiles avec petit-déjeuner, bar, restaurant et grande terrasse dans l'établissement"
+        size: "Chambres de 2 à 4 personnes"
+        price: "À partir de 80€ par nuitée"
+        place: "10 minutes en voiture du château"
+      auberge:
+        name: "Auberge de la Commanderie"
+        description: "Une auberge dans le centre ville médiéval de Saint Emilion dans une ancienne maison templière"
+        size: "Chambres de 2 à 5 personnes"
+        price: "À partir de 150€ par nuitée"
+        place: "10 minutes en voiture du château"

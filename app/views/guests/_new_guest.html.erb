@@ -1,6 +1,6 @@
 <div class="mt-8" data-controller="search-guest">
   <%= simple_form_for rsvp_path do |form_search| %>
-    <%= form_search.input :search, label: 'Chercher un nom', wrapper: :vertical_form_select, collection: Guest.all, label_method: :full_name, value_method: :id, input_html: { data: { search_guest_target: "input", action: "change->search-guest#search", controller: "tom-select" }} %>
+    <%= form_search.input :search, label: t('rsvp.form.search_label'), placeholder: t('rsvp.form.search_placeholder'), wrapper: :vertical_form_select, collection: Guest.all, label_method: :full_name, value_method: :id, input_html: { data: { search_guest_target: "input", action: "change->search-guest#search", controller: "tom-select" }} %>
   <% end %>
   <div class="mt-8">
     <%= turbo_frame_tag "edit_form", data: { search_guest_target: "editFrame" } do %>

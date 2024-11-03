@@ -1,6 +1,14 @@
 en:
   navbar:
     home: "Home"
-    infos: "Good to know"
+    infos:
+      link: "Good to know"
+      dropdown:
+        bordeaux: "Getting to Bordeaux"
+        civil: "Civil ceremony"
+        church: "Religious ceremony"
+        diner: "Reception at the château"
+        dress_code: "Dress code"
+        accommodations: "Nearby accommodations"
     to_visit: "What to visit"
   rsvp_button: "Confirm my presence"

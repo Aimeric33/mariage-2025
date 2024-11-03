@@ -32,7 +32,7 @@ en:
         link: "link"
     church:
       title: "Religious ceremony in Montagne"
-      description: "The church is located in Montagne, a small village 10 minutes from Saint-Emilion and about 1 hour from Bordeaux (car required). Allow time to get there."
+      description: "The church is located in Montagne, a small village 10 minutes from Saint-Emilion and about 1 hour from Bordeaux (car required). You are all very welcome!"
       hour: "Start time: "
       address: "Address: "
       parking:
@@ -42,3 +42,30 @@ en:
         around:
           title: "3 minutes walk from the church:"
           description: " two parking lots with more spaces are accessible rue des Ecoles behind the church."
+    diner:
+      title: "Reception at château Saint Georges"
+      description: "Château Saint Georges is just a few minutes drive or walk from the church, surrounded by vineyards. We'll hold a small ceremony to exchange vows, followed by a vin d'honneur and dinner."
+      hour: "Start time: "
+      address: "Address: "
+      parking: "The parking lot is located in an alley between the vines under the lime trees to the right of the château (it will be indicated on your arrival)."
+    accommodation:
+      title: "Nearby accommodations"
+      description: "Here are some accommodations close to Château Saint Georges to help you plan your stay. If you’d prefer something more personal, feel free to search for Airbnbs or other options on your own."
+      camping:
+        name: "Camping Yelloh! Saint Emilion"
+        description: "A 4-star campsite with a pool, lake, chalets, and tent pitches. Very close to the château!"
+        size: "Camping sites and chalets for 2 to 6 people"
+        price: "Starting at €35 per night"
+        place: "4 minutes by car from the château"
+      hotel:
+        name: "Ibis Bordeaux Saint Emilion"
+        description: "A 3-star hotel with breakfast, bar, restaurant, and a large terrace within the establishment"
+        size: "Rooms for 2 to 4 people"
+        price: "Starting at €80 per night"
+        place: "10 minutes by car from the château"
+      auberge:
+        name: "Auberge de la Commanderie"
+        description: "An inn in the medieval town center of Saint Emilion in a former Templar house"
+        size: "Rooms for 2 to 5 people"
+        price: "Starting at €150 per night"
+        place: "10 minutes by car from the château"
