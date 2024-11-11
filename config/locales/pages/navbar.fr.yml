@@ -12,3 +12,7 @@ fr:
         accommodations: "Hébergements proches"
     to_visit: "À visiter"
   rsvp_button: "Confirmer ma présence"
+  footer:
+    home: "Accueil"
+    infos: "Infos pratiques"
+    to_visit: "À visiter"
