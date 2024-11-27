@@ -1,27 +1,27 @@
-<nav class="bg-transparent w-full z-20 absolute top-0 start-0" id="top">
+<nav class="bg-transparent w-full z-20 absolute top-0 start-0" id="top" data-controller="navbar">
   <div class="container flex flex-wrap items-start justify-between mx-auto p-4">
     <%= link_to root_path, class: "flex items-center space-x-3 rtl:space-x-reverse" do %>
       <%= image_tag "logo_blanc.svg", class: "w-12 h-12 md:w-36 md:h-36", alt: "Logo site mariage" %>
     <% end %>
     <div class="flex gap-6">
       <div class="flex md:order-2 gap-6 rtl:space-x-reverse">
-        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-gray-800 rounded md:hidden hover:bg-gray-100 focus:outline-none" aria-controls="navbar-sticky" aria-expanded="false">
+        <button type="button" class="z-50 inline-flex items-center p-2 w-10 h-10 justify-center text-gray-800 rounded md:hidden hover:bg-gray-100 focus:outline-none" data-action="click->navbar#openMenu">
           <span class="sr-only">Open main menu</span>
           <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
           </svg>
         </button>
       </div>
-      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-        <ul class="flex flex-col items-center p-4 mt-4 font-bold border border-gray-100 rounded bg-gray-50 md:space-x-8 md:flex-row  md:p-0 md:mt-0 md:border-0 md:bg-transparent"
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky" data-navbar-target="menu">
+        <ul class="min-h-screen md:min-h-max flex flex-col items-center p-4 pt-16 font-bold border border-gray-100 rounded bg-gray-50 space-y-4 md:space-y-0 md:space-x-8 md:flex-row md:p-0 md:mt-0 md:border-0 md:bg-transparent"
             data-controller="active-link">
           <li>
             <%= link_to t('navbar.home'), root_path, class: "block py-2 px-3 no-underline text-lg text-gray-800 hover:text-primary-600 md:p-0", data: { active_link_target: "link" } %>
           </li>
           <li>
-            <div class="dropdown relative transition-all transform">
+            <div class="dropdown text-center relative transition-all transform">
               <%= link_to t('navbar.infos.link'), infos_pratiques_path, class: "block py-2 px-3 no-underline text-lg text-gray-800 hover:text-primary-600 md:p-0", data: { active_link_target: "link" } %>
-              <div class="dropdown-content transition-all transform absolute py-2 px-3 rounded">
+              <div class="dropdown-content transition-all transform relative py-2 px-3 rounded md:absolute">
                 <%= link_to t('navbar.infos.dropdown.bordeaux'), infos_pratiques_path(anchor: "bordeaux"), class: "block py-2 px-3 no-underline text-md font-normal text-gray-800 hover:text-primary-600 md:p-0"%>
                 <%= link_to t('navbar.infos.dropdown.civil'), infos_pratiques_path(anchor: "mairie"), class: "block py-2 px-3 no-underline text-md font-normal text-gray-800 hover:text-primary-600 md:p-0"%>
                 <%= link_to t('navbar.infos.dropdown.church'), infos_pratiques_path(anchor: "eglise"), class: "block py-2 px-3 no-underline text-md font-normal text-gray-800 hover:text-primary-600 md:p-0"%>
