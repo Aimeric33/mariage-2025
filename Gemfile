@@ -51,7 +51,7 @@ gem "devise"
 gem "autoprefixer-rails"
 gem "simple_form", github: "heartcombo/simple_form"
 gem "activeadmin", "4.0.0.beta13"
-gem "cssbundling-rails"
+# gem "cssbundling-rails"
 
 group :development, :test do
   gem "dotenv-rails"
