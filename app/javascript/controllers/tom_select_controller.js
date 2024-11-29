@@ -10,7 +10,7 @@ export default class extends Controller {
   }
 
   initTomSelect() {
-    new TomSelect(this.element, {
+    const select = new TomSelect(this.element, {
       create: false,
       sortField: {
         field: "text",
@@ -25,6 +25,9 @@ export default class extends Controller {
         }
       },
     })
+    select.on("item_add", select.blur)
+    const clear = () => select.clear(true)
+    select.on("focus", clear)
   }
 
   renderNoResults() {
