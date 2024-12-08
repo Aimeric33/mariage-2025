@@ -1,12 +1,14 @@
 en:
   rsvp:
     title: "Confirm your presence"
-    description1: "We would be delighted to have you with us to celebrate our wedding."
-    description2: "Please confirm your attendance (and that of your family members) by March 15, 2025 by filling out the form below."
+    description1: "We would be delighted to have you with us to celebrate our wedding.
+    Please confirm your attendance (and that of your family members) by March 15, 2025 by filling out the form below."
+    description2: "Select the first person and answer the questions, then click on \"Add someone else\" and answer the questions for that person, and so on.
+    When you've finished, click on \"Save responses.\""
     form:
       search_label: "Search for a name"
       search_placeholder: "Type and select a name"
       search_submit: "Save responses"
       hello1: "Hello"
       hello2: ", will you be there?"
-      new_guest_button: "Confirm for someone else"
+      new_guest_button: "Add someone else"
