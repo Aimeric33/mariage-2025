@@ -2,7 +2,7 @@
 
 <%= turbo_frame_tag "edit_form_#{@guest.id}" do %>
   <p class="text-2xl mb-4">👋 <%= t('rsvp.form.hello1') %> <span class="font-bold"><%= @guest.first_name %></span><%= t('rsvp.form.hello2') %></p>
-  <%= simple_form_for @guest, html: { data: { update_guests_target: "form" }} do |guest_form| %>
+  <%= simple_form_for @guest, html: { data: { update_guests_target: "form", lenis_prevent: "" }} do |guest_form| %>
     <%= guest_form.input :dinner_presence, as: :radio_buttons, collection: [:dinner_yes, :dinner_no] %>
     <%= guest_form.input :brunch_presence, as: :radio_buttons, collection: [:brunch_yes, :brunch_no] %>
     <%= guest_form.input :food_restriction, as: :radio_buttons, collection: [:no_restriction, :vegetarian, :pescetarian] %>
