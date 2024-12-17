@@ -1,14 +1,14 @@
 fr:
   rsvp:
     title: "Confirmez votre présence"
-    description1: "Nous serions ravis de vous compter parmi nous pour célébrer notre mariage.
-    Merci de bien vouloir confirmer votre présence (et celle des membres de votre famille) avant le 15 mars 2025 en remplissant le formulaire ci-dessous."
-    description2: "Sélectionnez une première personne et répondez aux questions puis cliquez sur \"Ajouter une personne supplémentaire\" et répondez aux questions pour cette personne et ainsi de suite.
-    Quand vous avez terminé, cliquez sur \"Enregistrer les réponses\"."
+    description1_html: "Nous serions ravis de vous compter parmi nous pour célébrer notre mariage.
+    Merci de bien vouloir confirmer votre présence (et celle des membres de votre famille) <b>avant le 23 mars 2025</b> en remplissant le formulaire ci-dessous."
+    description2: "Recherchez les membres de votre famille un par un et répondez aux questions pour chacun."
     form:
       search_label: "Chercher un nom"
       search_placeholder: "Ecrivez et sélectionnez un nom"
       search_submit: "Enregistrer les réponses"
       hello1: "Coucou"
       hello2: ", seras-tu là ?"
-      new_guest_button: "Ajouter une autre personne"
+      new_guest_button: "Confirmer pour une autre personne"
+      hint_submit_html: "Vous avez bien répondu aux questions pour tous les membres de votre famille ?<br>Alors cliquez sur le bouton Enregistrer 👇"
