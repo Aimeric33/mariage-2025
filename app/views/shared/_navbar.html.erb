@@ -22,12 +22,12 @@
             <div class="dropdown text-center relative transition-all transform">
               <%= link_to t('navbar.infos.link'), infos_pratiques_path, class: "block py-2 px-3 no-underline text-lg text-gray-800 hover:text-primary-600 md:p-0", data: { active_link_target: "link" } %>
               <div class="dropdown-content transition-all transform relative py-2 px-3 rounded md:absolute">
-                <%= link_to t('navbar.infos.dropdown.bordeaux'), infos_pratiques_path(anchor: "bordeaux"), class: "block py-2 px-3 no-underline text-md font-normal text-gray-800 hover:text-primary-600 md:p-0"%>
-                <%= link_to t('navbar.infos.dropdown.civil'), infos_pratiques_path(anchor: "mairie"), class: "block py-2 px-3 no-underline text-md font-normal text-gray-800 hover:text-primary-600 md:p-0"%>
-                <%= link_to t('navbar.infos.dropdown.church'), infos_pratiques_path(anchor: "eglise"), class: "block py-2 px-3 no-underline text-md font-normal text-gray-800 hover:text-primary-600 md:p-0"%>
-                <%= link_to t('navbar.infos.dropdown.diner'), infos_pratiques_path(anchor: "reception"), class: "block py-2 px-3 no-underline text-md font-normal text-gray-800 hover:text-primary-600 md:p-0"%>
-                <%= link_to t('navbar.infos.dropdown.dress_code'), infos_pratiques_path(anchor: "dress-code"), class: "block py-2 px-3 no-underline text-md font-normal text-gray-800 hover:text-primary-600 md:p-0"%>
-                <%= link_to t('navbar.infos.dropdown.accommodations'), infos_pratiques_path(anchor: "hebergement"), class: "block py-2 px-3 no-underline text-md font-normal text-gray-800 hover:text-primary-600 md:p-0"%>
+                <%= link_to t('navbar.infos.dropdown.bordeaux'), infos_pratiques_path(anchor: "bordeaux"), class: "block py-2 px-3 no-underline text-md font-normal text-gray-800 hover:text-primary-600 md:p-0", data: { action: "click->navbar#openMenu"} %>
+                <%= link_to t('navbar.infos.dropdown.civil'), infos_pratiques_path(anchor: "mairie"), class: "block py-2 px-3 no-underline text-md font-normal text-gray-800 hover:text-primary-600 md:p-0", data: { action: "click->navbar#openMenu"} %>
+                <%= link_to t('navbar.infos.dropdown.church'), infos_pratiques_path(anchor: "eglise"), class: "block py-2 px-3 no-underline text-md font-normal text-gray-800 hover:text-primary-600 md:p-0", data: { action: "click->navbar#openMenu"} %>
+                <%= link_to t('navbar.infos.dropdown.diner'), infos_pratiques_path(anchor: "reception"), class: "block py-2 px-3 no-underline text-md font-normal text-gray-800 hover:text-primary-600 md:p-0", data: { action: "click->navbar#openMenu"} %>
+                <%= link_to t('navbar.infos.dropdown.dress_code'), infos_pratiques_path(anchor: "dress-code"), class: "block py-2 px-3 no-underline text-md font-normal text-gray-800 hover:text-primary-600 md:p-0", data: { action: "click->navbar#openMenu"} %>
+                <%= link_to t('navbar.infos.dropdown.accommodations'), infos_pratiques_path(anchor: "hebergement"), class: "block py-2 px-3 no-underline text-md font-normal text-gray-800 hover:text-primary-600 md:p-0", data: { action: "click->navbar#openMenu"} %>
               </div>
             </div>
           </li>
