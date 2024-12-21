@@ -2,16 +2,294 @@
   <div class="container mx-auto px-4 pt-12">
     <div class="text-center">
       <h1 class="text-4xl font-handwriting font-semibold lg:text-6xl">
-        À visiter autour de Bordeaux
+        Nos conseils pour visiter Bordeaux et ses alentours
       </h1>
     </div>
   </div>
 </section>
 
-<section>
+<section class="">
   <div class="mx-auto max-w-screen-xl px-4 py-8 md:px-8 md:py-16">
     <div class="text-center">
-      <h2 class="text-3xl text-gray-800 font-bold sm:text-4xl">Page en construction</h2>
+      <h2 class="text-3xl text-gray-800 font-bold sm:text-4xl"><%= "Bordeaux, le port de la Lune" %></h2>
+      <p class="mt-2 max-w-4xl mx-auto text-gray-800">
+        <%= "Après 6 ans passés à Bordeaux, voici quelques unes de nos recommandations pour découvrir notre magnifique ville." %>
+      </p>
+    </div>
+    <div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">
+      <div class="w-full overflow-hidden bg-white rounded-lg shadow transition-all duration-300 hover:translate-y-[-0.5rem] hover:shadow-xl">
+        <%= link_to "#", target: "_blank", class: "block hover:scale-100" do %>
+          <%= image_tag "yelloh_saint_emilion.jpg", class: "object-cover object-center w-full h-56" %>
+          <div class="px-6 py-4">
+            <p class="text-xl font-bold text-gray-800 "><%= "Le centre ville historique de Bordeaux" %></p>
+            <p class="mt-2 text-gray-800"><%= "A Bordeaux, tout peut se faire à pied ou à vélo. Visitez la cathédrale Saint André juste à côté de l'Hôtel de Ville où aura lieu notre cérémonie civile. Flanez dans les grandes rues historiques du centre dont la rue Sainte Catherine (la plus longue rue commerçante d'Europe). Et prenez une pause gourmande avec les meilleures glaces de Bordeaux sur la place du Parlement." %></p>
+          </div>
+        <% end %>
+      </div>
+      <div class="w-full overflow-hidden bg-white rounded-lg shadow transition-all duration-300 hover:translate-y-[-0.5rem] hover:shadow-xl">
+        <%= link_to "#", target: "_blank", class: "block hover:scale-100" do %>
+          <%= image_tag "hotel-ibis.jpg", class: "object-cover object-center w-full h-56" %>
+          <div class="px-6 py-4">
+            <p class="text-xl font-bold text-gray-800 "><%= "Les quais au bord de la Garonne" %></p>
+            <p class="mt-2 text-gray-800"><%= "Démarrez votre ballade place de la Bourse et trempez vos pieds dans le miroir d'eau. Continuez le long du fleuve en direction du musée Cap Sciences. Si le pont Chaban Delmas n'est pas levé, aventurez vous sur la rive droite et prenez un café au magasin général dans le fameux écoquartier Darwin, tout proche de l'université où nous nous sommes rencontrés. Marchez dans le parc aux Angéliques avant de traverser à nouveau la Garonne, en BATO ou à pied sur le plus vieux pont de Bordeaux (le pont de pierre)." %></p>
+          </div>
+        <% end %>
+      </div>
+      <div class="w-full overflow-hidden bg-white rounded-lg shadow transition-all duration-300 hover:translate-y-[-0.5rem] hover:shadow-xl">
+        <%= link_to "#", target: "_blank", class: "block hover:scale-100" do %>
+          <%= image_tag "hotel-saint-emilion.jpg", class: "object-cover object-center w-full h-56" %>
+          <div class="px-6 py-4">
+            <p class="text-xl font-bold text-gray-800 "><%= "Le nouveau Bordeaux aux Bassins à Flots" %></p>
+            <p class="mt-2 text-gray-800"><%= "C'est le quartier qui bouge le plus à Bordeaux en ce moment. Mangez sur la péniche du Bistrot Régent ou faites votre marché de producteurs locaux aux Halles de Bacalan. Prenez en plein les yeux en allant au Bassin des Lumières qui prend place dans la Base sous marine construite pour la Seconde Guerre Mondiale. Et si vous avez la fièvre du samedi soir, faites la fête dans les nombreux bars dansants et boîtes de nuit flottantes du quartier." %></p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-tertiary-50">
+  <div class="mx-auto max-w-screen-xl px-4 py-8 md:px-8 md:py-16">
+    <div class="text-center">
+      <h2 class="text-3xl text-gray-800 font-bold sm:text-4xl"><%= "Saint Emilion et le Périgord" %></h2>
+      <p class="mt-2 max-w-4xl mx-auto text-gray-800">
+        <%= "Notre cérémonie religieuse et notre réception ont lieu à côté de Saint Emilion, vous ne pouvez donc pas passer à côté de cette riche région viticole." %>
+      </p>
+    </div>
+    <div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">
+      <div class="w-full overflow-hidden bg-white rounded-lg shadow transition-all duration-300 hover:translate-y-[-0.5rem] hover:shadow-xl">
+        <%= link_to "#", target: "_blank", class: "block hover:scale-100" do %>
+          <%= image_tag "hotel-saint-emilion.jpg", class: "object-cover object-center w-full h-56" %>
+          <div class="px-6 py-4">
+            <p class="text-xl font-bold text-gray-800 "><%= "Saint Emilion et les châteaux" %></p>
+            <p class="mt-2 text-gray-800"><%= "La ville est restée dans son état moyennageux avec son église et son cloître qui donnent sur une place surplomblant toute la ville où nous avons pris cette photo. Dégustez les meilleurs vins de la région, grands crus classés ou pas, parmi les centaines de propriétés viticoles." %></p>
+            <div class="mt-4 space-y-2 text-gray-800">
+              <p class="hidden flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 640 512"><path d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM609.3 512l-137.8 0c5.4-9.4 8.6-20.3 8.6-32l0-8c0-60.7-27.1-115.2-69.8-151.8c2.4-.1 4.7-.2 7.1-.2l61.4 0C567.8 320 640 392.2 640 481.3c0 17-13.8 30.7-30.7 30.7zM432 256c-31 0-59-12.6-79.3-32.9C372.4 196.5 384 163.6 384 128c0-26.8-6.6-52.1-18.3-74.3C384.3 40.1 407.2 32 432 32c61.9 0 112 50.1 112 112s-50.1 112-112 112z"/></svg>
+                <%= t("infos.accommodation.auberge.size") %>
+              </p>
+              <p class="hidden flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 320 512"><path d="M48.1 240c-.1 2.7-.1 5.3-.1 8l0 16c0 2.7 0 5.3 .1 8L32 272c-17.7 0-32 14.3-32 32s14.3 32 32 32l28.3 0C89.9 419.9 170 480 264 480l24 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-24 0c-57.9 0-108.2-32.4-133.9-80L256 336c17.7 0 32-14.3 32-32s-14.3-32-32-32l-143.8 0c-.1-2.6-.2-5.3-.2-8l0-16c0-2.7 .1-5.4 .2-8L256 240c17.7 0 32-14.3 32-32s-14.3-32-32-32l-125.9 0c25.7-47.6 76-80 133.9-80l24 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-24 0C170 32 89.9 92.1 60.3 176L32 176c-17.7 0-32 14.3-32 32s14.3 32 32 32l16.1 0z"/></svg>
+                <%= t("infos.accommodation.auberge.price") %>
+              </p>
+              <p class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 320 512"><path d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480l0-162.9c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9L192 480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"/></svg>
+                <%= "A 45 minutes de Bordeaux en voiture" %>
+              </p>
+            </div>
+          </div>
+        <% end %>
+      </div>
+      <div class="w-full overflow-hidden bg-white rounded-lg shadow transition-all duration-300 hover:translate-y-[-0.5rem] hover:shadow-xl">
+        <%= link_to "#", target: "_blank", class: "block hover:scale-100" do %>
+          <%= image_tag "hotel-ibis.jpg", class: "object-cover object-center w-full h-56" %>
+          <div class="px-6 py-4">
+            <p class="text-xl font-bold text-gray-800 "><%= "Castillon-la-Bataille" %></p>
+            <p class="mt-2 text-gray-800"><%= "Revivez la Guerre de Cent Ans là où elle s'est achevée avec La Bataille de Castillon, un spectacle grandiose avec des centaines de bénévoles qui jouent des personnages de l'époque comme Anne Claire une collègue de Stéphanie qui joue avec le feu. A voir tous les jeudis, vendredis et samedis de juillet et août." %></p>
+            <div class="mt-4 space-y-2 text-gray-800">
+              <p class="hidden flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 640 512"><path d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM609.3 512l-137.8 0c5.4-9.4 8.6-20.3 8.6-32l0-8c0-60.7-27.1-115.2-69.8-151.8c2.4-.1 4.7-.2 7.1-.2l61.4 0C567.8 320 640 392.2 640 481.3c0 17-13.8 30.7-30.7 30.7zM432 256c-31 0-59-12.6-79.3-32.9C372.4 196.5 384 163.6 384 128c0-26.8-6.6-52.1-18.3-74.3C384.3 40.1 407.2 32 432 32c61.9 0 112 50.1 112 112s-50.1 112-112 112z"/></svg>
+                <%= t("infos.accommodation.auberge.size") %>
+              </p>
+              <p class="hidden flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 320 512"><path d="M48.1 240c-.1 2.7-.1 5.3-.1 8l0 16c0 2.7 0 5.3 .1 8L32 272c-17.7 0-32 14.3-32 32s14.3 32 32 32l28.3 0C89.9 419.9 170 480 264 480l24 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-24 0c-57.9 0-108.2-32.4-133.9-80L256 336c17.7 0 32-14.3 32-32s-14.3-32-32-32l-143.8 0c-.1-2.6-.2-5.3-.2-8l0-16c0-2.7 .1-5.4 .2-8L256 240c17.7 0 32-14.3 32-32s-14.3-32-32-32l-125.9 0c25.7-47.6 76-80 133.9-80l24 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-24 0C170 32 89.9 92.1 60.3 176L32 176c-17.7 0-32 14.3-32 32s14.3 32 32 32l16.1 0z"/></svg>
+                <%= t("infos.accommodation.auberge.price") %>
+              </p>
+              <p class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 320 512"><path d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480l0-162.9c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9L192 480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"/></svg>
+                <%= "A 1h de Bordeaux en voiture" %>
+              </p>
+            </div>
+          </div>
+        <% end %>
+      </div>
+      <div class="w-full overflow-hidden bg-white rounded-lg shadow transition-all duration-300 hover:translate-y-[-0.5rem] hover:shadow-xl">
+        <%= link_to "#", target: "_blank", class: "block hover:scale-100" do %>
+          <%= image_tag "hotel-saint-emilion.jpg", class: "object-cover object-center w-full h-56" %>
+          <div class="px-6 py-4">
+            <p class="text-xl font-bold text-gray-800 "><%= "Le Périgord et ses paysages" %></p>
+            <p class="mt-2 text-gray-800"><%= "Visitez Périgueux et goûtez à ses spécialités gastronomiques : les fraises, la truffe ou encore le foie gras et le canard. La Dordogne regorge aussi de nombreux lieux magnifiques à découvrir comme les grottes de Lascaux, le gouffre de Padirac et toutes ses rivières parfaites pour une sortie canoë." %></p>
+            <div class="mt-4 space-y-2 text-gray-800">
+              <p class="hidden flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 640 512"><path d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM609.3 512l-137.8 0c5.4-9.4 8.6-20.3 8.6-32l0-8c0-60.7-27.1-115.2-69.8-151.8c2.4-.1 4.7-.2 7.1-.2l61.4 0C567.8 320 640 392.2 640 481.3c0 17-13.8 30.7-30.7 30.7zM432 256c-31 0-59-12.6-79.3-32.9C372.4 196.5 384 163.6 384 128c0-26.8-6.6-52.1-18.3-74.3C384.3 40.1 407.2 32 432 32c61.9 0 112 50.1 112 112s-50.1 112-112 112z"/></svg>
+                <%= t("infos.accommodation.auberge.size") %>
+              </p>
+              <p class="hidden flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 320 512"><path d="M48.1 240c-.1 2.7-.1 5.3-.1 8l0 16c0 2.7 0 5.3 .1 8L32 272c-17.7 0-32 14.3-32 32s14.3 32 32 32l28.3 0C89.9 419.9 170 480 264 480l24 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-24 0c-57.9 0-108.2-32.4-133.9-80L256 336c17.7 0 32-14.3 32-32s-14.3-32-32-32l-143.8 0c-.1-2.6-.2-5.3-.2-8l0-16c0-2.7 .1-5.4 .2-8L256 240c17.7 0 32-14.3 32-32s-14.3-32-32-32l-125.9 0c25.7-47.6 76-80 133.9-80l24 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-24 0C170 32 89.9 92.1 60.3 176L32 176c-17.7 0-32 14.3-32 32s14.3 32 32 32l16.1 0z"/></svg>
+                <%= t("infos.accommodation.auberge.price") %>
+              </p>
+              <p class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 320 512"><path d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480l0-162.9c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9L192 480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"/></svg>
+                <%= "A 1h30 de Bordeaux en voiture" %>
+              </p>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="">
+  <div class="mx-auto max-w-screen-xl px-4 py-8 md:px-8 md:py-16">
+    <div class="text-center">
+      <h2 class="text-3xl text-gray-800 font-bold sm:text-4xl"><%= "La côte Atlantique" %></h2>
+      <p class="mt-2 max-w-4xl mx-auto text-gray-800">
+        <%= "Impossible de venir sous le soleil de Bordeaux sans passer une journée sur la côte pour profiter des plus belles plages ou s'initier au surf avec les vagues de l'océan." %>
+      </p>
+    </div>
+    <div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">
+      <div class="w-full overflow-hidden bg-white rounded-lg shadow transition-all duration-300 hover:translate-y-[-0.5rem] hover:shadow-xl">
+        <%= link_to "#", target: "_blank", class: "block hover:scale-100" do %>
+          <%= image_tag "hotel-saint-emilion.jpg", class: "object-cover object-center w-full h-56" %>
+          <div class="px-6 py-4">
+            <p class="text-xl font-bold text-gray-800 "><%= "Le bassin d'Arcachon et sa dune" %></p>
+            <p class="mt-2 text-gray-800"><%= "La ville est restée dans son état moyennageux avec son église et son cloître qui donnent sur une place surplomblant toute la ville où nous avons pris cette photo. Dégustez les meilleurs vins de la région, grands crus classés ou pas, parmi les centaines de propriétés viticoles." %></p>
+            <div class="mt-4 space-y-2 text-gray-800">
+              <p class="hidden flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 640 512"><path d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM609.3 512l-137.8 0c5.4-9.4 8.6-20.3 8.6-32l0-8c0-60.7-27.1-115.2-69.8-151.8c2.4-.1 4.7-.2 7.1-.2l61.4 0C567.8 320 640 392.2 640 481.3c0 17-13.8 30.7-30.7 30.7zM432 256c-31 0-59-12.6-79.3-32.9C372.4 196.5 384 163.6 384 128c0-26.8-6.6-52.1-18.3-74.3C384.3 40.1 407.2 32 432 32c61.9 0 112 50.1 112 112s-50.1 112-112 112z"/></svg>
+                <%= t("infos.accommodation.auberge.size") %>
+              </p>
+              <p class="hidden flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 320 512"><path d="M48.1 240c-.1 2.7-.1 5.3-.1 8l0 16c0 2.7 0 5.3 .1 8L32 272c-17.7 0-32 14.3-32 32s14.3 32 32 32l28.3 0C89.9 419.9 170 480 264 480l24 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-24 0c-57.9 0-108.2-32.4-133.9-80L256 336c17.7 0 32-14.3 32-32s-14.3-32-32-32l-143.8 0c-.1-2.6-.2-5.3-.2-8l0-16c0-2.7 .1-5.4 .2-8L256 240c17.7 0 32-14.3 32-32s-14.3-32-32-32l-125.9 0c25.7-47.6 76-80 133.9-80l24 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-24 0C170 32 89.9 92.1 60.3 176L32 176c-17.7 0-32 14.3-32 32s14.3 32 32 32l16.1 0z"/></svg>
+                <%= t("infos.accommodation.auberge.price") %>
+              </p>
+              <p class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 320 512"><path d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480l0-162.9c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9L192 480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"/></svg>
+                <%= "A 45 minutes de Bordeaux en voiture" %>
+              </p>
+            </div>
+          </div>
+        <% end %>
+      </div>
+      <div class="w-full overflow-hidden bg-white rounded-lg shadow transition-all duration-300 hover:translate-y-[-0.5rem] hover:shadow-xl">
+        <%= link_to "#", target: "_blank", class: "block hover:scale-100" do %>
+          <%= image_tag "hotel-ibis.jpg", class: "object-cover object-center w-full h-56" %>
+          <div class="px-6 py-4">
+            <p class="text-xl font-bold text-gray-800 "><%= "Cap-Ferret et Lacanau" %></p>
+            <p class="mt-2 text-gray-800"><%= "Revivez la Guerre de Cent Ans là où elle s'est achevée avec La Bataille de Castillon, un spectacle grandiose avec des centaines de bénévoles qui jouent des personnages de l'époque comme Anne Claire une collègue de Stéphanie qui joue avec le feu. A voir tous les jeudis, vendredis et samedis de juillet et août." %></p>
+            <div class="mt-4 space-y-2 text-gray-800">
+              <p class="hidden flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 640 512"><path d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM609.3 512l-137.8 0c5.4-9.4 8.6-20.3 8.6-32l0-8c0-60.7-27.1-115.2-69.8-151.8c2.4-.1 4.7-.2 7.1-.2l61.4 0C567.8 320 640 392.2 640 481.3c0 17-13.8 30.7-30.7 30.7zM432 256c-31 0-59-12.6-79.3-32.9C372.4 196.5 384 163.6 384 128c0-26.8-6.6-52.1-18.3-74.3C384.3 40.1 407.2 32 432 32c61.9 0 112 50.1 112 112s-50.1 112-112 112z"/></svg>
+                <%= t("infos.accommodation.auberge.size") %>
+              </p>
+              <p class="hidden flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 320 512"><path d="M48.1 240c-.1 2.7-.1 5.3-.1 8l0 16c0 2.7 0 5.3 .1 8L32 272c-17.7 0-32 14.3-32 32s14.3 32 32 32l28.3 0C89.9 419.9 170 480 264 480l24 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-24 0c-57.9 0-108.2-32.4-133.9-80L256 336c17.7 0 32-14.3 32-32s-14.3-32-32-32l-143.8 0c-.1-2.6-.2-5.3-.2-8l0-16c0-2.7 .1-5.4 .2-8L256 240c17.7 0 32-14.3 32-32s-14.3-32-32-32l-125.9 0c25.7-47.6 76-80 133.9-80l24 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-24 0C170 32 89.9 92.1 60.3 176L32 176c-17.7 0-32 14.3-32 32s14.3 32 32 32l16.1 0z"/></svg>
+                <%= t("infos.accommodation.auberge.price") %>
+              </p>
+              <p class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 320 512"><path d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480l0-162.9c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9L192 480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"/></svg>
+                <%= "A 1h de Bordeaux en voiture" %>
+              </p>
+            </div>
+          </div>
+        <% end %>
+      </div>
+      <div class="w-full overflow-hidden bg-white rounded-lg shadow transition-all duration-300 hover:translate-y-[-0.5rem] hover:shadow-xl">
+        <%= link_to "#", target: "_blank", class: "block hover:scale-100" do %>
+          <%= image_tag "hotel-saint-emilion.jpg", class: "object-cover object-center w-full h-56" %>
+          <div class="px-6 py-4">
+            <p class="text-xl font-bold text-gray-800 "><%= "Les lacs et autres activités" %></p>
+            <p class="mt-2 text-gray-800"><%= "Visitez Périgueux et goûtez à ses spécialités gastronomiques : les fraises, la truffe ou encore le foie gras et le canard. La Dordogne regorge aussi de nombreux lieux magnifiques à découvrir comme les grottes de Lascaux, le gouffre de Padirac et toutes ses rivières parfaites pour une sortie canoë." %></p>
+            <div class="mt-4 space-y-2 text-gray-800">
+              <p class="hidden flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 640 512"><path d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM609.3 512l-137.8 0c5.4-9.4 8.6-20.3 8.6-32l0-8c0-60.7-27.1-115.2-69.8-151.8c2.4-.1 4.7-.2 7.1-.2l61.4 0C567.8 320 640 392.2 640 481.3c0 17-13.8 30.7-30.7 30.7zM432 256c-31 0-59-12.6-79.3-32.9C372.4 196.5 384 163.6 384 128c0-26.8-6.6-52.1-18.3-74.3C384.3 40.1 407.2 32 432 32c61.9 0 112 50.1 112 112s-50.1 112-112 112z"/></svg>
+                <%= t("infos.accommodation.auberge.size") %>
+              </p>
+              <p class="hidden flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 320 512"><path d="M48.1 240c-.1 2.7-.1 5.3-.1 8l0 16c0 2.7 0 5.3 .1 8L32 272c-17.7 0-32 14.3-32 32s14.3 32 32 32l28.3 0C89.9 419.9 170 480 264 480l24 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-24 0c-57.9 0-108.2-32.4-133.9-80L256 336c17.7 0 32-14.3 32-32s-14.3-32-32-32l-143.8 0c-.1-2.6-.2-5.3-.2-8l0-16c0-2.7 .1-5.4 .2-8L256 240c17.7 0 32-14.3 32-32s-14.3-32-32-32l-125.9 0c25.7-47.6 76-80 133.9-80l24 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-24 0C170 32 89.9 92.1 60.3 176L32 176c-17.7 0-32 14.3-32 32s14.3 32 32 32l16.1 0z"/></svg>
+                <%= t("infos.accommodation.auberge.price") %>
+              </p>
+              <p class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 320 512"><path d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480l0-162.9c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9L192 480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"/></svg>
+                <%= "A 1h30 de Bordeaux en voiture" %>
+              </p>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-tertiary-50">
+  <div class="mx-auto max-w-screen-xl px-4 py-8 md:px-8 md:py-16">
+    <div class="text-center">
+      <h2 class="text-3xl text-gray-800 font-bold sm:text-4xl"><%= "Un peu plus loin..." %></h2>
+      <p class="mt-2 max-w-4xl mx-auto text-gray-800">
+        <%= "Si vous prenez de longues vacances, profitez en pour découvrir des viles un peu plus éloignées mais toutes aussi mignonnes." %>
+      </p>
+    </div>
+    <div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">
+      <div class="w-full overflow-hidden bg-white rounded-lg shadow transition-all duration-300 hover:translate-y-[-0.5rem] hover:shadow-xl">
+        <%= link_to "#", target: "_blank", class: "block hover:scale-100" do %>
+          <%= image_tag "hotel-saint-emilion.jpg", class: "object-cover object-center w-full h-56" %>
+          <div class="px-6 py-4">
+            <p class="text-xl font-bold text-gray-800 "><%= "Le Pays Basque" %></p>
+            <p class="mt-2 text-gray-800"><%= "La ville est restée dans son état moyennageux avec son église et son cloître qui donnent sur une place surplomblant toute la ville où nous avons pris cette photo. Dégustez les meilleurs vins de la région, grands crus classés ou pas, parmi les centaines de propriétés viticoles." %></p>
+            <div class="mt-4 space-y-2 text-gray-800">
+              <p class="hidden flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 640 512"><path d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM609.3 512l-137.8 0c5.4-9.4 8.6-20.3 8.6-32l0-8c0-60.7-27.1-115.2-69.8-151.8c2.4-.1 4.7-.2 7.1-.2l61.4 0C567.8 320 640 392.2 640 481.3c0 17-13.8 30.7-30.7 30.7zM432 256c-31 0-59-12.6-79.3-32.9C372.4 196.5 384 163.6 384 128c0-26.8-6.6-52.1-18.3-74.3C384.3 40.1 407.2 32 432 32c61.9 0 112 50.1 112 112s-50.1 112-112 112z"/></svg>
+                <%= t("infos.accommodation.auberge.size") %>
+              </p>
+              <p class="hidden flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 320 512"><path d="M48.1 240c-.1 2.7-.1 5.3-.1 8l0 16c0 2.7 0 5.3 .1 8L32 272c-17.7 0-32 14.3-32 32s14.3 32 32 32l28.3 0C89.9 419.9 170 480 264 480l24 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-24 0c-57.9 0-108.2-32.4-133.9-80L256 336c17.7 0 32-14.3 32-32s-14.3-32-32-32l-143.8 0c-.1-2.6-.2-5.3-.2-8l0-16c0-2.7 .1-5.4 .2-8L256 240c17.7 0 32-14.3 32-32s-14.3-32-32-32l-125.9 0c25.7-47.6 76-80 133.9-80l24 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-24 0C170 32 89.9 92.1 60.3 176L32 176c-17.7 0-32 14.3-32 32s14.3 32 32 32l16.1 0z"/></svg>
+                <%= t("infos.accommodation.auberge.price") %>
+              </p>
+              <p class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 320 512"><path d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480l0-162.9c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9L192 480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"/></svg>
+                <%= "A 45 minutes de Bordeaux en voiture" %>
+              </p>
+            </div>
+          </div>
+        <% end %>
+      </div>
+      <div class="w-full overflow-hidden bg-white rounded-lg shadow transition-all duration-300 hover:translate-y-[-0.5rem] hover:shadow-xl">
+        <%= link_to "#", target: "_blank", class: "block hover:scale-100" do %>
+          <%= image_tag "hotel-ibis.jpg", class: "object-cover object-center w-full h-56" %>
+          <div class="px-6 py-4">
+            <p class="text-xl font-bold text-gray-800 "><%= "Blaye et Saintes" %></p>
+            <p class="mt-2 text-gray-800"><%= "Revivez la Guerre de Cent Ans là où elle s'est achevée avec La Bataille de Castillon, un spectacle grandiose avec des centaines de bénévoles qui jouent des personnages de l'époque comme Anne Claire une collègue de Stéphanie qui joue avec le feu. A voir tous les jeudis, vendredis et samedis de juillet et août." %></p>
+            <div class="mt-4 space-y-2 text-gray-800">
+              <p class="hidden flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 640 512"><path d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM609.3 512l-137.8 0c5.4-9.4 8.6-20.3 8.6-32l0-8c0-60.7-27.1-115.2-69.8-151.8c2.4-.1 4.7-.2 7.1-.2l61.4 0C567.8 320 640 392.2 640 481.3c0 17-13.8 30.7-30.7 30.7zM432 256c-31 0-59-12.6-79.3-32.9C372.4 196.5 384 163.6 384 128c0-26.8-6.6-52.1-18.3-74.3C384.3 40.1 407.2 32 432 32c61.9 0 112 50.1 112 112s-50.1 112-112 112z"/></svg>
+                <%= t("infos.accommodation.auberge.size") %>
+              </p>
+              <p class="hidden flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 320 512"><path d="M48.1 240c-.1 2.7-.1 5.3-.1 8l0 16c0 2.7 0 5.3 .1 8L32 272c-17.7 0-32 14.3-32 32s14.3 32 32 32l28.3 0C89.9 419.9 170 480 264 480l24 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-24 0c-57.9 0-108.2-32.4-133.9-80L256 336c17.7 0 32-14.3 32-32s-14.3-32-32-32l-143.8 0c-.1-2.6-.2-5.3-.2-8l0-16c0-2.7 .1-5.4 .2-8L256 240c17.7 0 32-14.3 32-32s-14.3-32-32-32l-125.9 0c25.7-47.6 76-80 133.9-80l24 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-24 0C170 32 89.9 92.1 60.3 176L32 176c-17.7 0-32 14.3-32 32s14.3 32 32 32l16.1 0z"/></svg>
+                <%= t("infos.accommodation.auberge.price") %>
+              </p>
+              <p class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 320 512"><path d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480l0-162.9c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9L192 480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"/></svg>
+                <%= "A 1h de Bordeaux en voiture" %>
+              </p>
+            </div>
+          </div>
+        <% end %>
+      </div>
+      <div class="w-full overflow-hidden bg-white rounded-lg shadow transition-all duration-300 hover:translate-y-[-0.5rem] hover:shadow-xl">
+        <%= link_to "#", target: "_blank", class: "block hover:scale-100" do %>
+          <%= image_tag "hotel-saint-emilion.jpg", class: "object-cover object-center w-full h-56" %>
+          <div class="px-6 py-4">
+            <p class="text-xl font-bold text-gray-800 "><%= "Les Pyrénées" %></p>
+            <p class="mt-2 text-gray-800"><%= "Visitez Périgueux et goûtez à ses spécialités gastronomiques : les fraises, la truffe ou encore le foie gras et le canard. La Dordogne regorge aussi de nombreux lieux magnifiques à découvrir comme les grottes de Lascaux, le gouffre de Padirac et toutes ses rivières parfaites pour une sortie canoë." %></p>
+            <div class="mt-4 space-y-2 text-gray-800">
+              <p class="hidden flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 640 512"><path d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM609.3 512l-137.8 0c5.4-9.4 8.6-20.3 8.6-32l0-8c0-60.7-27.1-115.2-69.8-151.8c2.4-.1 4.7-.2 7.1-.2l61.4 0C567.8 320 640 392.2 640 481.3c0 17-13.8 30.7-30.7 30.7zM432 256c-31 0-59-12.6-79.3-32.9C372.4 196.5 384 163.6 384 128c0-26.8-6.6-52.1-18.3-74.3C384.3 40.1 407.2 32 432 32c61.9 0 112 50.1 112 112s-50.1 112-112 112z"/></svg>
+                <%= t("infos.accommodation.auberge.size") %>
+              </p>
+              <p class="hidden flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 320 512"><path d="M48.1 240c-.1 2.7-.1 5.3-.1 8l0 16c0 2.7 0 5.3 .1 8L32 272c-17.7 0-32 14.3-32 32s14.3 32 32 32l28.3 0C89.9 419.9 170 480 264 480l24 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-24 0c-57.9 0-108.2-32.4-133.9-80L256 336c17.7 0 32-14.3 32-32s-14.3-32-32-32l-143.8 0c-.1-2.6-.2-5.3-.2-8l0-16c0-2.7 .1-5.4 .2-8L256 240c17.7 0 32-14.3 32-32s-14.3-32-32-32l-125.9 0c25.7-47.6 76-80 133.9-80l24 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-24 0C170 32 89.9 92.1 60.3 176L32 176c-17.7 0-32 14.3-32 32s14.3 32 32 32l16.1 0z"/></svg>
+                <%= t("infos.accommodation.auberge.price") %>
+              </p>
+              <p class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-primary-600" fill="currentColor" height="18" width="18" viewBox="0 0 320 512"><path d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480l0-162.9c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9L192 480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"/></svg>
+                <%= "A 1h30 de Bordeaux en voiture" %>
+              </p>
+            </div>
+          </div>
+        <% end %>
+      </div>
     </div>
   </div>
 </section>
