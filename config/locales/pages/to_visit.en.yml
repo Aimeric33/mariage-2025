@@ -1,2 +1,24 @@
 en:
   to_visit:
+    h1: "Our tips for visiting Bordeaux and its surroundings"
+    bordeaux:
+      title: "Bordeaux, the Port of the Moon"
+      desc: "After 6 years spent in Bordeaux, here are some of our recommendations for discovering our beautiful city."
+      center_title: "The historic city center of Bordeaux"
+      center_text: "In Bordeaux, everything can be done on foot or by bike. Visit the Saint André Cathedral right next to the City Hall, where our civil ceremony will take place. Stroll through the historic streets of the city center, including Sainte Catherine Street (the longest shopping street in Europe). And take a gourmet break with the best ice creams in Bordeaux at Place du Parlement."
+      quais_title: "The quays along the Garonne River"
+      quais_text: "Start your walk at Place de la Bourse and dip your feet in the Water Mirror. Continue along the river towards the Cap Sciences museum. If the Chaban Delmas Bridge is not raised, venture to the right bank and grab a coffee at the Magasin Général in the famous Darwin eco-district, close to the university where we met. Walk through the Parc aux Angéliques before crossing the Garonne again, either by BATO or on foot via the oldest bridge in Bordeaux (the Pont de Pierre)."
+      flots_title: "The new Bordeaux at Bassins à Flots"
+      flots_text: "This is the most vibrant neighborhood in Bordeaux right now. Dine on the Bistrot Régent's barge or shop for local produce at the Halles de Bacalan. Be amazed by the Bassin des Lumières, located in the submarine base built during World War II. And if you're in the mood for a Saturday night fever, party at the many dancing bars and floating nightclubs in the area."
+    emilion:
+      title: "Saint Emilion and the Périgord"
+      desc: "Our religious ceremony and reception take place near Saint Emilion, so you can’t miss this rich wine-growing region."
+      center_title: "Saint Emilion and the châteaux"
+      center_text: "The town has preserved its medieval charm with its church and cloister overlooking a square that offers a panoramic view of the entire town, where we took this photo. Enjoy the best wines of the region, whether classified grands crus or not, among the hundreds of wine estates."
+      center_distance: "45 minutes from Bordeaux by car"
+      castillon_title: "Castillon-la-Bataille"
+      castillon_text: "Relive the Hundred Years' War where it ended with the Battle of Castillon, a grand spectacle featuring hundreds of volunteers playing historical characters, such as Anne Claire, a colleague of Stéphanie who plays with fire. A must-see every Thursday, Friday, and Saturday in July and August."
+      castillon_distance: "1 hour from Bordeaux by car"
+      perigord_title: "The Périgord and its landscapes"
+      perigord_text: "Visit Périgueux and savor its gastronomic specialties: strawberries, truffles, foie gras, and duck. The Dordogne is also full of magnificent places to discover, such as the Lascaux Caves, the Padirac Chasm, and its many rivers perfect for a canoe trip."
+      perigord_distance: "1 hour 30 minutes from Bordeaux by car"

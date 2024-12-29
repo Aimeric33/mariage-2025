@@ -12,7 +12,7 @@
   <div class="mx-auto max-w-screen-xl px-4 py-8 md:px-8 md:py-16">
     <div class="grid grid-cols-1 gap-8 items-center md:grid-cols-2 md:gap-16">
       <div class="relative order-last md:order-first">
-        <%= image_tag ("carte_france.svg"), class: "rounded-lg inset-0 h-full object-cover" %>
+        <%= image_tag ("carte_france.svg"), class: "max-w-full rounded-lg inset-0 h-full object-cover" %>
       </div>
       <div>
         <h2 class="text-3xl font-bold sm:text-4xl"><%= t("infos.bordeaux.title") %></h2>
@@ -46,7 +46,7 @@
   <div class="mx-auto max-w-screen-xl px-4 py-8 md:px-8 md:py-16">
     <div class="grid grid-cols-1 gap-8 items-center md:grid-cols-2 md:gap-16">
       <div class="relative order-last">
-        <%= image_tag ("mairie-bordeaux.webp"), class: "rounded-lg inset-0 h-full object-cover" %>
+        <%= image_tag ("mairie-bordeaux.webp"), class: "max-w-full rounded-lg inset-0 h-full object-cover" %>
       </div>
       <div>
         <h2 class="text-3xl text-gray-800 font-bold sm:text-4xl"><%= t("infos.civil.title") %></h2>
@@ -92,7 +92,7 @@
   <div class="mx-auto max-w-screen-xl px-4 py-8 md:px-8 md:py-16">
     <div class="grid grid-cols-1 gap-8 items-center md:grid-cols-2 md:gap-16">
       <div class="relative order-last md:order-first">
-        <%= image_tag ("eglise-montagne.jpg"), class: "rounded-lg inset-0 h-full object-cover" %>
+        <%= image_tag ("eglise-montagne.jpg"), class: "max-w-full rounded-lg inset-0 h-full object-cover" %>
       </div>
       <div>
         <h2 class="text-3xl text-gray-800 font-bold sm:text-4xl"><%= t("infos.church.title") %></h2>
@@ -130,7 +130,7 @@
   <div class="mx-auto max-w-screen-xl px-4 py-8 md:px-8 md:py-16">
     <div class="grid grid-cols-1 gap-8 items-center md:grid-cols-2 md:gap-16">
       <div class="relative order-last">
-        <%= image_tag ("chateau-dessin.jpg"), class: "rounded-lg inset-0 h-full object-cover" %>
+        <%= image_tag ("chateau-dessin.jpg"), class: "max-w-full rounded-lg inset-0 h-full object-cover" %>
       </div>
       <div>
         <h2 class="text-3xl text-gray-800 font-bold sm:text-4xl"><%= t("infos.diner.title") %></h2>
@@ -170,10 +170,10 @@
         <div class="text-center">
           <h2 class="text-3xl text-gray-800 font-bold sm:text-4xl">Dress code</h2>
           <p class="mt-2 max-w-4xl mx-auto text-gray-800">
-            Le thème de notre mariage sera "Chic et Chaleureux". Ce moodboard vous propose quelques couleurs et styles adaptés à notre thème. Aucune obligation mais un petit clin d'oeil à ce thème serait chouette !
+            <%= t("infos.dresscode") %>
           </p>
         </div>
-        <%= image_tag ("dress_code.png"), class: "mx-auto rounded-lg inset-0 h-full object-cover md:w-[50rem]" %>
+        <%= image_tag ("dress_code.png"), class: "mt-4 max-w-full mx-auto rounded-lg inset-0 h-full object-cover md:w-[50rem]" %>
       </div>
     </div>
   </div>

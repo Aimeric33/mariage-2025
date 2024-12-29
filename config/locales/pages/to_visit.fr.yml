@@ -1,2 +1,24 @@
 fr:
   to_visit:
+    h1: "Nos conseils pour visiter Bordeaux et ses alentours"
+    bordeaux:
+      title: "Bordeaux, le port de la Lune"
+      desc: "Après 6 ans passés à Bordeaux, voici quelques unes de nos recommandations pour découvrir notre magnifique ville."
+      center_title: "Le centre ville historique de Bordeaux"
+      center_text: "A Bordeaux, tout peut se faire à pied ou à vélo. Visitez la cathédrale Saint André juste à côté de l'Hôtel de Ville où aura lieu notre cérémonie civile. Flanez dans les grandes rues historiques du centre dont la rue Sainte Catherine (la plus longue rue commerçante d'Europe). Et prenez une pause gourmande avec les meilleures glaces de Bordeaux sur la place du Parlement."
+      quais_title: "Les quais au bord de la Garonne"
+      quais_text: "Démarrez votre ballade place de la Bourse et trempez vos pieds dans le miroir d'eau. Continuez le long du fleuve en direction du musée Cap Sciences. Si le pont Chaban Delmas n'est pas levé, aventurez vous sur la rive droite et prenez un café au magasin général dans le fameux écoquartier Darwin, tout proche de l'université où nous nous sommes rencontrés. Marchez dans le parc aux Angéliques avant de traverser à nouveau la Garonne, en BATO ou à pied sur le plus vieux pont de Bordeaux (le pont de pierre)."
+      flots_title: "Le nouveau Bordeaux aux Bassins à Flots"
+      flots_text: "C'est le quartier qui bouge le plus à Bordeaux en ce moment. Mangez sur la péniche du Bistrot Régent ou faites votre marché de producteurs locaux aux Halles de Bacalan. Prenez en plein les yeux en allant au Bassin des Lumières qui prend place dans la Base sous marine construite pour la Seconde Guerre Mondiale. Et si vous avez la fièvre du samedi soir, faites la fête dans les nombreux bars dansants et boîtes de nuit flottantes du quartier."
+    emilion:
+      title: "Saint Emilion et le Périgord"
+      desc: "Notre cérémonie religieuse et notre réception ont lieu à côté de Saint Emilion, vous ne pouvez donc pas passer à côté de cette riche région viticole."
+      center_title: "Saint Emilion et les châteaux"
+      center_text: "La ville est restée dans son état moyennageux avec son église et son cloître qui donnent sur une place surplomblant toute la ville où nous avons pris cette photo. Dégustez les meilleurs vins de la région, grands crus classés ou pas, parmi les centaines de propriétés viticoles."
+      center_distance: "A 45 minutes de Bordeaux en voiture"
+      castillon_title: "Castillon-la-Bataille"
+      castillon_text: "Revivez la Guerre de Cent Ans là où elle s'est achevée avec La Bataille de Castillon, un spectacle grandiose avec des centaines de bénévoles qui jouent des personnages de l'époque comme Anne Claire une collègue de Stéphanie qui joue avec le feu. A voir tous les jeudis, vendredis et samedis de juillet et août."
+      castillon_distance: "A 1h de Bordeaux en voiture"
+      perigord_title: "Le Périgord et ses paysages"
+      perigord_text: "Visitez Périgueux et goûtez à ses spécialités gastronomiques : les fraises, la truffe ou encore le foie gras et le canard. La Dordogne regorge aussi de nombreux lieux magnifiques à découvrir comme les grottes de Lascaux, le gouffre de Padirac et toutes ses rivières parfaites pour une sortie canoë."
+      perigord_distance: "A 1h30 de Bordeaux en voiture"
