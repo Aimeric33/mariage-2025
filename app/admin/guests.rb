@@ -19,9 +19,9 @@ ActiveAdmin.register Guest do
   filter :address
   filter :email
   filter :child
-  filter :dinner_presence, as: :select, collection: Guest.dinner_presences.keys
-  filter :brunch_presence, as: :select, collection: Guest.brunch_presences.keys
-  filter :food_restriction, as: :select, collection: Guest.food_restrictions.keys
+  filter :dinner_presence, as: :select, collection: [["Pas de réponse", 0], ["Présent(e)", 1], ["Absent(e)", 2],]
+  filter :brunch_presence, as: :select, collection: [["Pas de réponse", 0], ["Présent(e)", 1], ["Absent(e)", 2],]
+  filter :food_restriction, as: :select, collection: [["Pas de restriction", 0], ["Végétarien", 1], ["Pescétarien", 2], ["Vegan", 3]]
   filter :created_at
   filter :updated_at
 
