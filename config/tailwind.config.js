@@ -11,6 +11,7 @@ module.exports = {
     './app/assets/stylesheets/active_admin.css',
     './config/initializers/simple_form_tailwind.rb'
   ],
+  darkMode: 'false',
   theme: {
     extend: {
       fontFamily: {

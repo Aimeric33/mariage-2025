@@ -39,6 +39,7 @@ export default class extends Controller {
       .then(response => response.text())
       .then(html => {
         document.body.innerHTML = html;
+        window.scrollTo(0, 0)
       })
       .catch(error => {
         console.error('An error occurred:', error);
